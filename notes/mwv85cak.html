@@ -1,0 +1,1279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WELCOME</title>
+<meta name="description" content="# 👋 Welcome to your CMDS Vault This is your first-read document. It will take **about 15 minutes** end-to-end and gets your vault personalized, your operator profile filled in, and your first Conn...">
+<link rel="canonical" href="https://seihwanmoon.github.io/share/notes/mwv85cak.html">
+<meta property="og:url" content="https://seihwanmoon.github.io/share/notes/mwv85cak.html">
+
+<link rel="icon" type="image/png" href="https://cmdspace.work/assets/logos/cmds-logo-round.png">
+<link rel="apple-touch-icon" href="https://cmdspace.work/assets/logos/cmds-logo-round.png">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="CMDSPACE">
+<meta property="og:title" content="WELCOME">
+<meta property="og:description" content="# 👋 Welcome to your CMDS Vault This is your first-read document. It will take **about 15 minutes** end-to-end and gets your vault personalized, your operator profile filled in, and your first Conn...">
+<meta property="og:image" content="https://share.cmdspace.work/assets/og/og-share.png">
+<meta property="og:image:secure_url" content="https://share.cmdspace.work/assets/og/og-share.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="CMDS Share — WELCOME">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="ko_KR">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="WELCOME">
+<meta name="twitter:description" content="# 👋 Welcome to your CMDS Vault This is your first-read document. It will take **about 15 minutes** end-to-end and gets your vault personalized, your operator profile filled in, and your first Conn...">
+<meta name="twitter:image" content="https://share.cmdspace.work/assets/og/og-share.png">
+
+<script>
+(function(){try{var t=localStorage.getItem('cmds-theme');if(t){document.documentElement.dataset.theme=t;}else if(window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches){document.documentElement.dataset.theme='dark';}else{document.documentElement.dataset.theme='light';}}catch(e){}})();
+</script>
+
+<style>
+:root {
+	--max: 750px;
+	--text: #1a1a1a;
+	--muted: #666;
+	--bg: #fff;
+	--accent: #134538;
+	--accent-light: #1a5c4a;
+	--accent-on: #fff;
+	--border: #e5e5e5;
+	--code-bg: #f5f5f5;
+	--card-bg: #fff;
+	--pre-bg: #f5f6f4;
+	--pre-fg: #24292e;
+	--graph-note: #22896a;
+}
+[data-theme="dark"] {
+	--text: #f2f4f3;
+	--muted: #9aa39d;
+	--bg: #06080a;
+	--accent: #E985A2;
+	--accent-light: #F4A4B8;
+	--accent-on: #1a0f14;
+	--border: #1a231f;
+	--code-bg: #161c19;
+	--card-bg: #0d1411;
+	--pre-bg: #0a0d0b;
+	--pre-fg: #e0e0e0;
+	--graph-note: #2fb488;
+}
+@media (prefers-color-scheme: dark) {
+	:root:not([data-theme="light"]) {
+	--text: #f2f4f3;
+	--muted: #9aa39d;
+	--bg: #06080a;
+	--accent: #E985A2;
+	--accent-light: #F4A4B8;
+	--accent-on: #1a0f14;
+	--border: #1a231f;
+	--code-bg: #161c19;
+	--card-bg: #0d1411;
+	--pre-bg: #0a0d0b;
+	--pre-fg: #e0e0e0;
+	--graph-note: #2fb488;
+	}
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { color-scheme: light dark; scroll-behavior: smooth; }
+html, body { overflow-x: hidden; }
+body {
+	font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Pretendard Variable', 'Pretendard', 'Apple SD Gothic Neo', 'Segoe UI', system-ui, sans-serif;
+	color: var(--text); background: var(--bg); line-height: 1.75;
+	font-size: 16px; -webkit-font-smoothing: antialiased;
+	transition: background-color .2s, color .2s;
+}
+
+.side-tools {
+	position: fixed; top: 1rem; right: 1rem; z-index: 100;
+	display: flex; flex-direction: column; gap: 0.5rem;
+}
+.tool-btn {
+	width: 36px; height: 36px;
+	background: var(--card-bg);
+	border: 1px solid var(--border);
+	border-radius: 50%;
+	cursor: pointer;
+	display: grid; place-items: center;
+	color: var(--text);
+	transition: border-color .15s, background .15s, color .15s;
+}
+.tool-btn:hover { border-color: var(--accent); }
+.tool-btn.active { border-color: var(--accent); color: var(--accent); }
+.tool-btn svg { width: 16px; height: 16px; }
+
+.side-panel {
+	position: fixed; top: 1rem; right: 4rem; z-index: 99;
+	width: 280px; max-height: calc(100vh - 2rem);
+	overflow-y: auto;
+	background: var(--card-bg);
+	border: 1px solid var(--border);
+	border-radius: 12px;
+	padding: 1rem 1.1rem;
+	display: none;
+	box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+}
+.side-panel.open { display: block; }
+.panel-head {
+	display: flex; align-items: center; justify-content: space-between;
+	margin-bottom: 0.6rem;
+}
+.panel-head h3 {
+	font-size: 0.72rem; font-weight: 700; text-transform: uppercase;
+	letter-spacing: 0.08em; color: var(--muted);
+}
+.pin-btn {
+	background: none; border: none; cursor: pointer; color: var(--muted);
+	width: 22px; height: 22px; display: grid; place-items: center;
+	border-radius: 5px;
+}
+.pin-btn:hover { color: var(--accent); background: var(--code-bg); }
+.pin-btn svg { width: 13px; height: 13px; }
+.g-controls { display: flex; gap: 2px; align-items: center; }
+
+/* docked mode: persistent right sidebar — TOC on top (scrolls), graph fills the rest */
+body.cmds-docked { padding-right: 312px; }
+body.cmds-docked .side-tools { right: calc(312px + 1rem); }
+body.cmds-docked #tocToggle, body.cmds-docked #graphToggle { display: none; }
+body.cmds-docked .pin-btn { color: var(--accent); }
+.side-dock {
+	position: fixed; top: 0; right: 0; bottom: 0; width: 312px; z-index: 98;
+	background: var(--card-bg); border-left: 1px solid var(--border);
+	display: flex; flex-direction: column;
+}
+.side-dock[hidden] { display: none; }
+.side-dock .side-panel {
+	position: static; display: block; width: auto; max-height: none;
+	border: none; border-radius: 0; box-shadow: none;
+}
+.side-dock #tocPanel { flex: 0 1 auto; min-height: 120px; max-height: 58%; overflow-y: auto; }
+.side-dock #graphPanel {
+	flex: 1 1 auto; min-height: 220px; overflow: hidden;
+	border-top: 1px solid var(--border);
+	display: flex; flex-direction: column;
+}
+.side-dock #graphPanel canvas { flex: 1; min-height: 0; }
+#graphCanvas { touch-action: none; cursor: grab; }
+#graphCanvas.dragging { cursor: grabbing; }
+#graphCanvas.on-node { cursor: pointer; }
+#tocList { display: flex; flex-direction: column; gap: 2px; }
+#tocList a {
+	color: var(--text); text-decoration: none; font-size: 0.82rem;
+	line-height: 1.4; padding: 0.25rem 0.5rem; border-radius: 6px;
+	display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+#tocList a:hover { background: var(--code-bg); color: var(--accent); }
+#tocList a.active { background: var(--code-bg); color: var(--accent); font-weight: 600; }
+#tocList a.toc-h2 { padding-left: 1.1rem; }
+#tocList a.toc-h3 { padding-left: 1.7rem; font-size: 0.78rem; color: var(--muted); }
+#tocList a.toc-h4 { padding-left: 2.3rem; font-size: 0.78rem; color: var(--muted); }
+#graphCanvas { width: 100%; display: block; }
+.graph-legend {
+	display: flex; gap: 0.9rem; margin-top: 0.5rem;
+	font-size: 0.7rem; color: var(--muted);
+}
+.graph-legend span::before {
+	content: ''; display: inline-block; width: 8px; height: 8px;
+	border-radius: 50%; margin-right: 4px;
+}
+.graph-legend .lg-link::before { background: var(--graph-note); }
+.graph-legend .lg-tag::before { background: #E985A2; }
+
+main {
+	max-width: var(--max); margin: 0 auto; padding: 4rem 1.5rem 3rem;
+}
+
+#note-content { font-size: 1rem; overflow-wrap: break-word; }
+#note-content h1, #note-content h2, #note-content h3,
+#note-content h4, #note-content h5, #note-content h6 {
+	font-weight: 700; letter-spacing: -0.02em; line-height: 1.3;
+	margin: 2rem 0 0.75rem; scroll-margin-top: 1.5rem;
+}
+#note-content h1 { font-size: 1.85rem; margin-top: 2.4rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--border); }
+#note-content h2 { font-size: 1.4rem; margin-top: 2.2rem; }
+#note-content h3 { font-size: 1.18rem; }
+#note-content h4 { font-size: 1.06rem; color: var(--text); margin-top: 1.8rem; }
+#note-content h5 { font-size: 0.98rem; color: var(--text); }
+#note-content h6 { font-size: 0.9rem; color: var(--muted); }
+#note-content p { margin: 0.85rem 0; }
+#note-content ul, #note-content ol { margin: 0.85rem 0 0.85rem 1.4rem; }
+#note-content li { margin: 0.35rem 0; }
+#note-content li > ul, #note-content li > ol { margin: 0.25rem 0 0.25rem 1.2rem; }
+#note-content a {
+	color: var(--accent); text-decoration: none;
+	border-bottom: 1px solid transparent; transition: border-color .15s;
+}
+#note-content a:hover { border-bottom-color: var(--accent); }
+#note-content code {
+	background: var(--code-bg); padding: 0.18em 0.45em; border-radius: 6px;
+	font-size: 0.86em; font-family: 'SF Mono', 'Menlo', monospace;
+}
+#note-content pre {
+	background: var(--pre-bg); color: var(--pre-fg);
+	border: 1px solid var(--border);
+	padding: 1rem; border-radius: 12px;
+	overflow-x: auto; font-size: 0.85rem; line-height: 1.6;
+	font-family: 'SF Mono', 'Menlo', monospace; margin: 1rem 0;
+	position: relative;
+}
+.code-copy {
+	position: absolute; top: 8px; right: 8px;
+	width: 28px; height: 28px; border-radius: 6px;
+	background: color-mix(in srgb, var(--card-bg) 92%, transparent);
+	backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px);
+	border: 1px solid var(--border);
+	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.18);
+	color: var(--muted); cursor: pointer;
+	display: grid; place-items: center;
+	opacity: 0; transition: opacity .15s, color .15s, border-color .15s;
+}
+#note-content pre:hover .code-copy, .code-copy.copied { opacity: 1; }
+.code-copy:hover, .code-copy.copied { color: var(--accent); border-color: var(--accent); }
+.code-copy svg { width: 14px; height: 14px; }
+.h-anchor {
+	margin-left: 0.4rem; opacity: 0; color: var(--muted);
+	border-bottom: none !important; transition: opacity .15s, color .15s;
+}
+.h-anchor svg { width: 0.75em; height: 0.75em; }
+.h-anchor:hover { color: var(--accent); }
+#note-content h1:hover .h-anchor, #note-content h2:hover .h-anchor,
+#note-content h3:hover .h-anchor, #note-content h4:hover .h-anchor { opacity: 0.75; }
+#note-content pre code { background: transparent; padding: 0; font-size: 1em; }
+#note-content pre[data-lang]::before {
+	content: attr(data-lang);
+	position: absolute; top: 7px; left: 12px;
+	font-size: 0.66rem; font-weight: 600; letter-spacing: 0.05em;
+	color: var(--muted); opacity: 0.75; text-transform: lowercase;
+	font-family: -apple-system, sans-serif;
+}
+#note-content pre[data-lang] { padding-top: 1.9rem; }
+.mermaid-container { margin: 1rem 0; overflow-x: auto; text-align: center; }
+.mermaid-container svg { max-width: 100%; height: auto; }
+#note-content blockquote {
+	border-left: 3px solid var(--accent); padding: 0.5rem 1rem;
+	margin: 1rem 0; color: var(--muted); background: var(--code-bg);
+	border-radius: 0 8px 8px 0;
+}
+#note-content img { max-width: 100%; height: auto; border-radius: 8px; margin: 1rem 0; }
+#note-content table {
+	border-collapse: collapse; margin: 1rem 0;
+	font-size: 0.9rem;
+	/* wide tables scroll inside themselves instead of panning the page */
+	display: block; width: max-content; min-width: 60%; max-width: 100%;
+	overflow-x: auto;
+}
+#note-content th, #note-content td {
+	border: none; border-bottom: 1px solid var(--border);
+	padding: 0.65rem 0.9rem; text-align: left; vertical-align: top;
+}
+#note-content th { font-weight: 700; font-size: 0.85rem; color: var(--muted); border-bottom-width: 2px; }
+#note-content tr:last-child td { border-bottom: none; }
+#note-content hr { border: none; border-top: 1px solid var(--border); margin: 2rem 0; }
+#note-content mark { background: rgba(233,133,162,0.25); padding: 0 0.2rem; border-radius: 3px; }
+#note-content .callout {
+	--co: var(--accent);
+	background: var(--code-bg); border-radius: 8px; padding: 0.9rem 1rem;
+	margin: 1rem 0; border-left: 3px solid var(--co);
+}
+#note-content .callout-title {
+	display: flex; align-items: center; gap: 0.5em;
+	font-weight: 700; color: var(--co); margin: 0;
+}
+#note-content .callout-icon { display: flex; align-items: center; flex-shrink: 0; }
+#note-content .callout-icon svg, #note-content .callout-title > svg {
+	width: 1.1em; height: 1.1em;
+}
+#note-content .callout-title-inner { line-height: 1.45; }
+#note-content .callout-fold { display: none; }
+#note-content .callout-content > :first-child { margin-top: 0.45rem; }
+#note-content .callout-content > :last-child { margin-bottom: 0.1rem; }
+#note-content .callout[data-callout="abstract"], #note-content .callout[data-callout="summary"], #note-content .callout[data-callout="tldr"] { --co: #23a8b8; }
+#note-content .callout[data-callout="info"], #note-content .callout[data-callout="note"], #note-content .callout[data-callout="todo"] { --co: #4a8edb; }
+#note-content .callout[data-callout="tip"], #note-content .callout[data-callout="hint"], #note-content .callout[data-callout="important"] { --co: #23b89b; }
+#note-content .callout[data-callout="success"], #note-content .callout[data-callout="check"], #note-content .callout[data-callout="done"] { --co: #3aa657; }
+#note-content .callout[data-callout="question"], #note-content .callout[data-callout="help"], #note-content .callout[data-callout="faq"] { --co: #d9a13b; }
+#note-content .callout[data-callout="warning"], #note-content .callout[data-callout="caution"], #note-content .callout[data-callout="attention"] { --co: #e0813a; }
+#note-content .callout[data-callout="danger"], #note-content .callout[data-callout="error"], #note-content .callout[data-callout="failure"], #note-content .callout[data-callout="fail"], #note-content .callout[data-callout="missing"], #note-content .callout[data-callout="bug"] { --co: #e05252; }
+#note-content .callout[data-callout="example"] { --co: #8a6fd6; }
+#note-content .callout[data-callout="quote"], #note-content .callout[data-callout="cite"] { --co: var(--muted); }
+#note-content .internal-link {
+	color: var(--accent); border-bottom: 1px dashed var(--accent); cursor: help;
+}
+
+.cmds-meta {
+	max-width: var(--max); margin: 0 auto;
+	padding: 2rem 1.5rem 2rem; border-top: 1px solid var(--border);
+	font-size: 0.75rem; color: var(--muted); text-align: center;
+	display: flex; flex-direction: column; align-items: center; gap: 0.6rem;
+}
+.cmds-meta img { width: 28px; height: 28px; border-radius: 50%; }
+.cmds-badges { display: flex; gap: 0.5rem; flex-wrap: wrap; justify-content: center; }
+.cmds-badge {
+	display: inline-flex; align-items: center; gap: 0.35em;
+	font-size: 0.7rem; font-weight: 600; color: var(--muted);
+	border: 1px solid var(--border); border-radius: 999px;
+	padding: 0.22rem 0.65rem; background: var(--card-bg);
+}
+.cmds-badge svg { width: 12px; height: 12px; }
+.cmds-badge.b-e2e { color: var(--accent); border-color: color-mix(in srgb, var(--accent) 45%, var(--border)); }
+.cmds-badge.b-soon { color: #e0813a; border-color: color-mix(in srgb, #e0813a 45%, var(--border)); }
+.cmds-badge.b-expired { color: #e05252; border-color: color-mix(in srgb, #e05252 45%, var(--border)); }
+.cmds-meta a { color: var(--accent); text-decoration: none; font-weight: 600; }
+.cmds-meta a:hover { text-decoration: underline; }
+.cmds-theme-note { font-size: 0.68rem; color: var(--muted); opacity: 0.75; }
+.cmds-author-link {
+	margin-top: 0.35rem; font-size: 0.85rem; font-weight: 700;
+	letter-spacing: -0.01em;
+}
+.cmds-loading { color: var(--muted); font-style: italic; }
+.decrypt-error {
+	color: #c62828; background: #fce4ec; padding: 1rem; border-radius: 8px;
+	border: 1px solid #c62828; margin: 2rem 0; text-align: center;
+}
+[data-theme="dark"] .decrypt-error { background: #4a1a24; color: #ff8899; border-color: #ff8899; }
+
+@media (max-width: 720px) {
+	.side-panel { right: 1rem; top: 4rem; width: min(280px, calc(100vw - 2rem)); }
+}
+</style>
+<link rel="stylesheet" href="https://seihwanmoon.github.io/share/notes/css/4ff51068b531ffcda8282b7068cda1f506a08038.css">
+</head>
+<body>
+
+<div class="side-tools">
+	<button class="tool-btn" id="themeToggle" aria-label="Toggle theme">
+		<svg id="themeIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></svg>
+	</button>
+	<button class="tool-btn" id="tocToggle" aria-label="Table of contents" hidden>
+		<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h10M4 18h13"/></svg>
+	</button>
+	<button class="tool-btn" id="graphToggle" aria-label="Local graph" hidden>
+		<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="5" r="2.2"/><circle cx="5" cy="18" r="2.2"/><circle cx="19" cy="18" r="2.2"/><path d="M10.8 6.9 6.2 16m7-9.1 4.6 9.1M7.2 18h9.6"/></svg>
+	</button>
+	<button class="tool-btn" id="mdCopy" aria-label="Copy markdown" title="Copy markdown" hidden>
+		<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2.5"/><path d="M5 15H4.5A2.5 2.5 0 0 1 2 12.5v-8A2.5 2.5 0 0 1 4.5 2h8A2.5 2.5 0 0 1 15 4.5V5"/></svg>
+	</button>
+	<button class="tool-btn" id="mdDownload" aria-label="Download markdown" title="Download .md" hidden>
+		<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0 4.5-4.5M12 15l-4.5-4.5"/><path d="M4 19h16"/></svg>
+	</button>
+</div>
+
+<div class="side-dock" id="sideDock" hidden></div>
+
+<aside class="side-panel" id="tocPanel"><div class="panel-head"><h3>Contents</h3><button class="pin-btn" data-pin aria-label="Dock panels" title="Dock / undock"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 17v5M9 3h6l1 7 3 2H5l3-2 1-7z"/></svg></button></div><nav id="tocList"></nav></aside>
+<aside class="side-panel" id="graphPanel"><div class="panel-head"><h3>Local Graph</h3><span class="g-controls"><button class="pin-btn" id="gZoomOut" aria-label="Zoom out" title="Zoom out"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14"/></svg></button><button class="pin-btn" id="gZoomIn" aria-label="Zoom in" title="Zoom in"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></button><button class="pin-btn" id="gReset" aria-label="Reset view" title="Reset view"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 3-6.7"/><path d="M3 4v4h4"/></svg></button><button class="pin-btn" data-pin aria-label="Dock panels" title="Dock / undock"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 17v5M9 3h6l1 7 3 2H5l3-2 1-7z"/></svg></button></span></div><canvas id="graphCanvas"></canvas>
+<div class="graph-legend"><span class="lg-link">Notes</span><span class="lg-tag">Tags</span></div></aside>
+
+<main>
+	<article id="note-content" class="markdown-rendered"><h1 data-heading="👋 Welcome to your CMDS Vault" dir="auto">👋 Welcome to your CMDS Vault</h1>
+<p dir="auto">This is your first-read document. It will take <strong>about 15 minutes</strong> end-to-end and gets your vault personalized, your operator profile filled in, and your first Connect→Merge→Develop→Share cycle on paper.</p>
+<p dir="auto">If you read only one thing, read this. Everything else flows from here.</p>
+<hr>
+<h2 data-heading="What you just cloned" dir="auto">What you just cloned</h2>
+<p dir="auto">A <strong>CMDS-conventions starter vault</strong>. CMDS is a Personal Knowledge Management (PKM) system designed by 구요한 (Yohan Koo), running on Obsidian, with optional <a data-tooltip-position="top" aria-label="https://gobi.app" rel="noopener nofollow" class="external-link" href="https://gobi.app" target="_blank">Gobi Desktop</a> integration so your vault can publish a public "Brain" page.</p>
+<p dir="auto">The framework you'll use:</p>
+<ul>
+<li dir="auto"><strong>9 categories</strong> (100 Themes, 200 Literature, ..., 900 Divisions) for classifying knowledge</li>
+<li dir="auto"><strong>CMDS Process</strong> (Connect → Merge → Develop → Share) for moving knowledge through stages</li>
+<li dir="auto"><strong>8 slash commands</strong> (<code>/connect</code>, <code>/merge</code>, <code>/develop</code>, <code>/share</code>, <code>/inbox</code>, <code>/lint</code>, <code>/query</code>, <code>/status</code>) that operate the Process from Claude Code</li>
+<li dir="auto"><strong>6 system files</strong> that document the conventions for both you and AI assistants (incl. DESIGN.md, the visual-language spec)</li>
+<li dir="auto"><strong>3 Brain identity files</strong> (<code>BRAIN.md</code>, <code>BRAIN.jpg</code>, <code>BRAIN_PROMPT.md</code>) for Gobi integration</li>
+</ul>
+<p dir="auto">The canonical, fully-populated reference vault is the operator's own — see <a data-tooltip-position="top" aria-label="https://system.cmdspace.work" rel="noopener nofollow" class="external-link" href="https://system.cmdspace.work" target="_blank">system.cmdspace.work</a> — but <strong>your vault starts mostly empty</strong>, with conventions baked in. You'll fill it as you go.</p>
+<hr>
+<h2 data-heading="Read these in order (10 min)" dir="auto">Read these in order (10 min)</h2>
+<p dir="auto">Before doing anything, skim the 6 system files. You don't need to memorize — just know what each one is <em>for</em> so you can return to the right one later.</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>File</th>
+<th>Why read it</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong><a data-href="CMDS" href="CMDS" class="internal-link" target="_blank" rel="noopener nofollow">CMDS</a></strong> (precedence 3)</td>
+<td>The "story" — what CMDS is, the 9 categories explained, the 4-stage Process</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong><a data-href="🏛 CMDS Head Quarter" href="🏛 CMDS Head Quarter" class="internal-link" target="_blank" rel="noopener nofollow">🏛 CMDS Head Quarter</a></strong> (precedence 5)</td>
+<td>A flat list of all 91 sub-categories — your map</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong><a data-href="🏛 CMDS Guide" href="🏛 CMDS Guide" class="internal-link" target="_blank" rel="noopener nofollow">🏛 CMDS Guide</a></strong> (precedence 4)</td>
+<td>The standards — Properties, naming, file prefixes (you'll come back here often)</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong><a data-href="CLAUDE" href="CLAUDE" class="internal-link" target="_blank" rel="noopener nofollow">CLAUDE</a></strong> (precedence 1)</td>
+<td>Technical rules for Claude Code (skim only if you'll use Claude Code)</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong><a data-href="AGENTS" href="AGENTS" class="internal-link" target="_blank" rel="noopener nofollow">AGENTS</a></strong> (precedence 2)</td>
+<td>Same as #4 but for Gemini CLI / Codex / Cursor / etc.</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong><a data-href="DESIGN" href="DESIGN" class="internal-link" target="_blank" rel="noopener nofollow">DESIGN</a></strong> (precedence 6)</td>
+<td>Visual language spec — CI color tokens, Anti-Slop rules, template catalog (skim if you'll make slides / PDFs / web)</td>
+</tr>
+</tbody>
+</table>
+<blockquote dir="auto">
+<p>💡 <strong><code>precedence</code></strong> is the load order if multiple AI assistants are reading docs. Lower number = read first. CLAUDE.md (1) is the most authoritative for code workflows; HQ (5) is just navigation.</p>
+</blockquote>
+<hr>
+<h2 data-heading="🪪 Step 1 — Personalize your operator profile (5 min)" dir="auto">🪪 Step 1 — Personalize your operator profile (5 min)</h2>
+<blockquote dir="auto">
+<p>💡 <strong>Two paths</strong>:</p>
+<ul>
+<li dir="auto"><strong>Manual path (Steps 1A–1D below)</strong>: you decide each piece, run the batch-replace yourself, fill BRAIN.md by hand. Best when you want full control.</li>
+<li dir="auto"><strong>Guided path (cmds-onboarding skill)</strong>: open Claude Code in this vault and say <em>"cmds onboarding"</em> — a 15-min interview-led skill that runs the user-scope batch-replace, fills BRAIN.md from your answers, and creates 5–10 themed stub notes in <code>30. Permanent Notes/</code>. Skill location: <code>90. Settings/91. Skills/cmds-onboarding/SKILL.md</code>. Best when you want context filled fast.</li>
+</ul>
+<p>Both paths produce the same end state. Pick one. You can also start with the guided path and tune by hand afterward.</p>
+</blockquote>
+<h3 data-heading="Authorship policy — two distinct identities" dir="auto">Authorship policy — two distinct identities</h3>
+<p dir="auto">This starter vault has <strong>two kinds of <code>author:</code> field</strong>:</p>
+<ol>
+<li dir="auto">
+<p><strong>System file authorship</strong> = <code>[[구요한]]</code> (the original CMDS author). This is <strong>attribution</strong> — it identifies who wrote the system files (CLAUDE.md, AGENTS.md, CMDS.md, 🏛 CMDS Guide.md, 🏛 CMDS Head Quarter.md, WELCOME.md, README.md), the slash commands, the rules, and the skills. <strong>Do not change these.</strong> When you publish or fork your vault, this attribution should remain <code>[[구요한]]</code> so the upstream lineage is preserved.</p>
+</li>
+<li dir="auto">
+<p><strong>Your-note authorship</strong> = <code>[[Me]]</code> placeholder, which the onboarding flow batch-replaces with <code>[[&lt;Your Name&gt;]]</code>. This appears in templates and example frontmatters that <em>you</em> will use when creating your own notes (daily notes, permanent notes, BRAIN.md, captures). <strong>These should become your name.</strong></p>
+</li>
+</ol>
+<p dir="auto">The vault operator profile in <a data-href="CMDS" href="CMDS" class="internal-link" target="_blank" rel="noopener nofollow">CMDS</a> also has a <code>(Your Name)</code> placeholder section — fill it in once during onboarding so AI assistants give context-aware answers.</p>
+<h3 data-heading="1A. Pick your operator wikilink" dir="auto">1A. Pick your operator wikilink</h3>
+<p dir="auto">Decide what name your <code>author</code> field should use. Options:</p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Example</th>
+<th>Pros</th>
+<th>Cons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Real name</td>
+<td><code>[[John Doe]]</code></td>
+<td>Identifies you across notes</td>
+<td>Public-facing if you publish vault</td>
+</tr>
+<tr>
+<td>Handle</td>
+<td><code>[[johndoe]]</code></td>
+<td>Pseudonymous, consistent</td>
+<td>Less natural in citations</td>
+</tr>
+<tr>
+<td>Korean</td>
+<td><code>[[홍길동]]</code></td>
+<td>Native language ergonomics</td>
+<td>Mixed with English elsewhere</td>
+</tr>
+</tbody>
+</table>
+<p dir="auto">Pick one. You can change later (just re-run the ritual below).</p>
+<h3 data-heading="1B. Run the &quot;user-scope author batch-replace&quot; ritual" dir="auto">1B. Run the "user-scope author batch-replace" ritual</h3>
+<p dir="auto">Open this vault folder in Claude Code (<code>cd &lt;vault-path&gt; &amp;&amp; claude</code>). Then paste this prompt verbatim, replacing <code>&lt;Your Name&gt;</code> with what you chose:</p>
+<blockquote dir="auto">
+<p><strong>Prompt for Claude Code:</strong></p>
+<pre><code>Batch-replace `[[Me]]` with `[[&lt;Your Name&gt;]]` across this vault — but ONLY in user-personalization scope.
+
+INCLUDE (these are placeholders meant for the operator):
+- `BRAIN.md` and `BRAIN_PROMPT.md` (your Brain identity)
+- `00. Inbox/` (any notes you've started)
+- `30. Permanent Notes/`, `20. Literature Notes/`, `60. Collections/` (your captures)
+- `90. Settings/91. Templates/` (note templates you'll use)
+
+EXCLUDE (these are system-file authorship — leave their author fields as `[[구요한]]`):
+- vault root system files: CLAUDE.md, AGENTS.md, CMDS.md, 🏛 CMDS Guide.md, 🏛 CMDS Head Quarter.md, WELCOME.md, README.md
+- `.claude/commands/`, `.claude/rules/`
+- `90. Settings/94. Agent Settings/claude/commands/` (mirror)
+- `90. Settings/91. Skills/` (cmds-onboarding, gobi-onboarding, gobi-cli, daily-book-update)
+- `90. Settings/92. Prompts/`
+
+Note: Body-text occurrences of `[[Me]]` inside the EXCLUDE files (e.g. example frontmatter snippets showing what your notes should look like) should also remain unchanged — they are *placeholders for your future notes*, not authorship of the system file itself.
+
+Use exact-string replace (case-sensitive). After replacing, run a verification grep across the INCLUDE scope to confirm zero residual `[[Me]]` there, and report counts per directory.
+</code></pre>
+</blockquote>
+<p dir="auto">Or, if you prefer the shell:</p>
+<pre class="language-bash"><code class="language-bash is-loaded"><span class="token builtin class-name">cd</span> <span class="token operator">&lt;</span>your-vault-path<span class="token operator">&gt;</span>
+
+<span class="token comment"># Preview first (limited to user-personalization scope)</span>
+<span class="token function">grep</span> <span class="token parameter variable">-rn</span> <span class="token string">'\[\[Me\]\]'</span> <span class="token parameter variable">--include</span><span class="token operator">=</span><span class="token string">'*.md'</span> BRAIN.md BRAIN_PROMPT.md <span class="token string">"00. Inbox"</span> <span class="token string">"30. Permanent Notes"</span> <span class="token string">"20. Literature Notes"</span> <span class="token string">"60. Collections"</span> <span class="token string">"90. Settings/91. Templates"</span> <span class="token operator"><span class="token file-descriptor important">2</span>&gt;</span>/dev/null
+
+<span class="token comment"># Run the replace (only in user-scope dirs/files; system files untouched)</span>
+<span class="token keyword">for</span> <span class="token for-or-select variable">target</span> <span class="token keyword">in</span> BRAIN.md BRAIN_PROMPT.md <span class="token string">"00. Inbox"</span> <span class="token string">"30. Permanent Notes"</span> <span class="token string">"20. Literature Notes"</span> <span class="token string">"60. Collections"</span> <span class="token string">"90. Settings/91. Templates"</span><span class="token punctuation">;</span> <span class="token keyword">do</span>
+  <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token parameter variable">-e</span> <span class="token string">"<span class="token variable">$target</span>"</span> <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
+    <span class="token function">find</span> <span class="token string">"<span class="token variable">$target</span>"</span> <span class="token parameter variable">-name</span> <span class="token string">'*.md'</span> <span class="token parameter variable">-type</span> f <span class="token parameter variable">-exec</span> <span class="token function">sed</span> <span class="token parameter variable">-i</span> <span class="token string">''</span> <span class="token string">'s/\[\[Me\]\]/[[Your Name]]/g'</span> <span class="token punctuation">{</span><span class="token punctuation">}</span> + <span class="token operator"><span class="token file-descriptor important">2</span>&gt;</span>/dev/null
+  <span class="token keyword">fi</span>
+<span class="token keyword">done</span>
+
+<span class="token comment"># Verify zero residue in user scope</span>
+<span class="token function">grep</span> <span class="token parameter variable">-rn</span> <span class="token string">'\[\[Me\]\]'</span> <span class="token parameter variable">--include</span><span class="token operator">=</span><span class="token string">'*.md'</span> BRAIN.md BRAIN_PROMPT.md <span class="token string">"00. Inbox"</span> <span class="token string">"30. Permanent Notes"</span> <span class="token string">"20. Literature Notes"</span> <span class="token string">"60. Collections"</span> <span class="token string">"90. Settings/91. Templates"</span> <span class="token operator"><span class="token file-descriptor important">2</span>&gt;</span>/dev/null <span class="token operator">&amp;&amp;</span> <span class="token builtin class-name">echo</span> <span class="token string">"REMAINING ABOVE"</span> <span class="token operator">||</span> <span class="token builtin class-name">echo</span> <span class="token string">"USER-SCOPE CLEAN"</span>
+</code></pre>
+<blockquote dir="auto">
+<p><strong>Why a wikilink?</strong> Author as <code>[[Your Name]]</code> means you can later create a People note <code>Your Name.md</code> in <code>60. Collections/61. People/</code>, and Obsidian's backlink panel will show every note you authored. This is a standard CMDS pattern.</p>
+<p><strong>Why not touch system files?</strong> The system files (CLAUDE.md, AGENTS.md, CMDS.md, etc.) are authored by <a data-href="구요한" href="구요한" class="internal-link" target="_blank" rel="noopener nofollow">구요한</a> (original CMDS author). Their <code>author:</code> field is <strong>attribution</strong>, not your personalization slot. Replacing it would falsely claim you wrote them.</p>
+</blockquote>
+<h3 data-heading="1C. Fill in the operator profile in CMDS.md" dir="auto">1C. Fill in the operator profile in CMDS.md</h3>
+<p dir="auto">Open <a data-href="CMDS" href="CMDS" class="internal-link" target="_blank" rel="noopener nofollow">CMDS</a> and find the section <strong>"## The Vault Operator: (Your Name)"</strong>. It contains a TODO comment with a template. Fill it with:</p>
+<ul>
+<li dir="auto"><strong>Role</strong>: 학생 / 연구자 / 전문가 / 프리랜서 / 개인사업자 / 회사원 / 아무거나 — 자기 직업 한 줄</li>
+<li dir="auto"><strong>Primary work</strong>: 지금 시간을 가장 많이 쓰는 활동</li>
+<li dir="auto"><strong>Background</strong>: 학력·경력 한 줄 요약</li>
+<li dir="auto"><strong>Current Focus Areas</strong>: 1-4개 — 지금 가장 활발하게 노트가 쌓일 주제들</li>
+<li dir="auto"><strong>Primary Activities</strong>: 매일/매주 하는 일</li>
+</ul>
+<p dir="auto">Why this matters: when you ask Claude / Gemini / ChatGPT a question and they have access to CMDS.md, this profile shapes whether they give you a generic answer or a context-aware answer. The richer this section, the smarter your AI assistants get.</p>
+<h3 data-heading="1D. Personalize BRAIN.md" dir="auto">1D. Personalize BRAIN.md</h3>
+<p dir="auto"><a data-href="BRAIN" href="BRAIN" class="internal-link" target="_blank" rel="noopener nofollow">BRAIN</a> is the public face of your vault on Gobi Space (if you connect Gobi later). Open it and replace placeholder lines:</p>
+<ul>
+<li dir="auto"><code>**Name**: (your name)</code></li>
+<li dir="auto"><code>**Role**: (student / researcher / hobbyist — anything)</code></li>
+<li dir="auto"><code>**Areas of interest**: ...</code></li>
+<li dir="auto">The "Pinned" list of notes to highlight</li>
+</ul>
+<p dir="auto">If you don't plan to use Gobi yet, BRAIN.md still acts as your "About Me" page inside the vault.</p>
+<hr>
+<h2 data-heading="🚀 Step 2 — Try the CMDS Process commands (5 min)" dir="auto">🚀 Step 2 — Try the CMDS Process commands (5 min)</h2>
+<p dir="auto">The vault ships 8 slash commands that operate the CMDS Process. They live in <code>.claude/commands/</code>. To use them, open this vault in Claude Code (<code>claude</code> from terminal), then type <code>/&lt;command&gt;</code>.</p>
+<h3 data-heading="2A. Quick orientation (zero dialogs)" dir="auto">2A. Quick orientation (zero dialogs)</h3>
+<pre><code>/status
+</code></pre>
+<p dir="auto">Returns a one-screen snapshot: how many notes per stage, what to do next. On a fresh vault, it'll tell you "everything's empty — start with /inbox or /connect."</p>
+<h3 data-heading="2B. Capture your first idea (Connect)" dir="auto">2B. Capture your first idea (Connect)</h3>
+<p dir="auto">Pick something on your mind right now — a question, a fact, a fragment. Then type:</p>
+<pre><code>/connect "&lt;your idea in one sentence&gt;"
+</code></pre>
+<p dir="auto">The command will (a) classify it as interest/topic/variable/terminology, (b) create a stub note in the Theme stage, (c) link it appropriately. Auto-pilot if input is unambiguous, asks at most 1 question if not.</p>
+<h3 data-heading="2C. (Later, after you have ~3 notes on the same topic) Synthesize" dir="auto">2C. (Later, after you have ~3 notes on the same topic) Synthesize</h3>
+<p dir="auto">When you have multiple notes about a topic and want one clean Literature note that integrates them:</p>
+<pre><code>/merge &lt;topic&gt;
+</code></pre>
+<p dir="auto">This is the heaviest command — it'll dialog with you about purpose, candidate notes, angle, and let you review the draft. The output goes to <code>30. Permanent Notes/</code> (or appropriate location) classified as <code>📚 210 Literature Reviews</code> (or similar).</p>
+<h3 data-heading="2D. Health check" dir="auto">2D. Health check</h3>
+<p dir="auto">After a week or two:</p>
+<pre><code>/lint inbox
+</code></pre>
+<p dir="auto">Reports orphan notes, contradictions, stale frontmatter. Read-only — won't change anything unless you ask.</p>
+<h3 data-heading="What about /develop, /share, /query?" dir="auto">What about /develop, /share, /query?</h3>
+<ul>
+<li dir="auto"><code>/develop</code> — when you want to apply a method to data, or build code/prompt/curriculum from existing notes</li>
+<li dir="auto"><code>/share</code> — when you want to turn a synthesized note into a newsletter / slide deck / SNS post (auto-delegates to writer skills)</li>
+<li dir="auto"><code>/query</code> — when you want to ask a question across your vault and have the answer filed back as a permanent note</li>
+</ul>
+<p dir="auto">You don't need all 8 from day one. <strong><code>/status</code>, <code>/inbox</code>, <code>/connect</code>, <code>/merge</code> are the daily core.</strong> The others come in as your vault grows.</p>
+<p dir="auto">Full reference: <a data-href="CLAUDE" href="CLAUDE" class="internal-link" target="_blank" rel="noopener nofollow">CLAUDE</a> "CMDS Process Command Suite" section.</p>
+<hr>
+<h2 data-heading="🌐 Step 3 — Connect Gobi (optional, +10 min)" dir="auto">🌐 Step 3 — Connect Gobi (optional, +10 min)</h2>
+<p dir="auto">If you want a public Brain page on Gobi Space:</p>
+<ol>
+<li dir="auto">Install <a data-tooltip-position="top" aria-label="https://gobi.app" rel="noopener nofollow" class="external-link" href="https://gobi.app" target="_blank">Gobi Desktop</a> or <code>npm install -g @gobi-ai/cli</code></li>
+<li dir="auto">Follow the <strong>gobi-onboarding</strong> skill at <code>90. Settings/91. Skills/gobi-onboarding/SKILL.md</code></li>
+</ol>
+<p dir="auto">That skill walks 8 steps from <code>gobi init</code> to a published Brain Update on <code>gobispace.com/@&lt;your-slug&gt;</code>. Total time ~10 min.</p>
+<p dir="auto">If you don't want Gobi right now, <strong>skip this step</strong>. The vault works fully as a local PKM without Gobi. You can come back later.</p>
+<hr>
+<h2 data-heading="📚 Step 4 — Bookmark these for ongoing reference" dir="auto">📚 Step 4 — Bookmark these for ongoing reference</h2>
+<p dir="auto">Once you're past onboarding, the docs you'll come back to most:</p>
+<ul>
+<li dir="auto"><a data-href="🏛 CMDS Guide" href="🏛 CMDS Guide" class="internal-link" target="_blank" rel="noopener nofollow">🏛 CMDS Guide</a> — when creating a new note and want the right Properties / type / template</li>
+<li dir="auto"><a data-href="🏛 CMDS Head Quarter" href="🏛 CMDS Head Quarter" class="internal-link" target="_blank" rel="noopener nofollow">🏛 CMDS Head Quarter</a> — when you've forgotten which 📚 sub-category a note belongs in</li>
+<li dir="auto"><a data-href="CLAUDE" href="CLAUDE" class="internal-link" target="_blank" rel="noopener nofollow">CLAUDE</a> "CMDS Process Command Suite" — when you're not sure which slash command to use</li>
+<li dir="auto"><code>.claude/rules/frontmatter-standard.md</code> — when YAML formatting feels fiddly</li>
+<li dir="auto"><code>.claude/rules/wikilink-rules.md</code> — when a wikilink isn't resolving</li>
+</ul>
+<hr>
+<h2 data-heading="🛰 Step 5 — Adding satellite vaults (much later, optional)" dir="auto">🛰 Step 5 — Adding satellite vaults (much later, optional)</h2>
+<p dir="auto">The CMDS architecture supports <strong>satellite vaults</strong> — separate Obsidian vaults with specialized purposes (e.g., a Karpathy-style LLM Wiki where an LLM ingests external sources and compiles them into a persistent wiki).</p>
+<p dir="auto">You don't need this from day one. When you do want one:</p>
+<ol>
+<li dir="auto">Create a separate Obsidian vault folder (independent git repo recommended)</li>
+<li dir="auto">Add a row to the "Satellite Vaults" table in <a data-href="🏛 CMDS Head Quarter" href="🏛 CMDS Head Quarter" class="internal-link" target="_blank" rel="noopener nofollow">🏛 CMDS Head Quarter</a> and <a data-href="CLAUDE" href="CLAUDE" class="internal-link" target="_blank" rel="noopener nofollow">CLAUDE</a></li>
+<li dir="auto">Use text references (<code>→ &lt;Vault Name&gt;: &lt;page name&gt;</code>) for cross-vault citation since Obsidian wikilinks don't cross vault boundaries</li>
+<li dir="auto">Optionally register the satellite with <code>qmd MCP</code> or similar so Claude Code can search it from any cwd</li>
+</ol>
+<p dir="auto">The mothership↔satellite convention is fully documented in <a data-href="CLAUDE" href="CLAUDE" class="internal-link" target="_blank" rel="noopener nofollow">CLAUDE</a> "🛰 Satellite Vaults" section. Look at it when needed; ignore until then.</p>
+<hr>
+<h2 data-heading="🪧 Cheatsheet — Daily / Weekly Rhythm" dir="auto">🪧 Cheatsheet — Daily / Weekly Rhythm</h2>
+<pre><code>하루 시작:        /status                 (방향 잡기)
+inbox 가득:       /inbox → /connect       (capture)
+주간 정리:        /merge &lt;topic&gt;          (synthesis)
+산출물 만들기:     /develop or /share      (artifact)
+볼트 위생점검:     /lint &lt;scope&gt;           (read-only)
+빠른 질문:        /query &lt;topic&gt;          (검색 + 합성)
+</code></pre>
+<hr>
+<h2 data-heading="✅ Onboarding checklist" dir="auto">✅ Onboarding checklist</h2>
+<h3 data-heading="Manual path" dir="auto">Manual path</h3>
+<ul class="contains-task-list">
+<li data-task="" class="task-list-item" dir="auto"><input type="checkbox" class="task-list-item-checkbox">Read CMDS.md and HQ.md (10 min)</li>
+<li data-task="" class="task-list-item" dir="auto"><input type="checkbox" class="task-list-item-checkbox">Skim 🏛 CMDS Guide and CLAUDE.md (5 min)</li>
+<li data-task="" class="task-list-item" dir="auto"><input type="checkbox" class="task-list-item-checkbox">Pick operator wikilink and run <strong>user-scope</strong> author batch-replace (5 min) — system files retain <code>[[구요한]]</code></li>
+<li data-task="" class="task-list-item" dir="auto"><input type="checkbox" class="task-list-item-checkbox">Fill in <code>(Your Name)</code> profile section in CMDS.md (5 min)</li>
+<li data-task="" class="task-list-item" dir="auto"><input type="checkbox" class="task-list-item-checkbox">Personalize BRAIN.md (5 min)</li>
+<li data-task="" class="task-list-item" dir="auto"><input type="checkbox" class="task-list-item-checkbox">Try <code>/status</code> and <code>/connect</code> once each (5 min)</li>
+<li data-task="" class="task-list-item" dir="auto"><input type="checkbox" class="task-list-item-checkbox">(Optional) Run gobi-onboarding skill (10 min) — for Gobi Space publish</li>
+</ul>
+<h3 data-heading="Guided path (recommended for class / cohort use)" dir="auto">Guided path (recommended for class / cohort use)</h3>
+<ul class="contains-task-list">
+<li data-task="" class="task-list-item" dir="auto"><input type="checkbox" class="task-list-item-checkbox">Read CMDS.md (skim) and HQ.md (5 min)</li>
+<li data-task="" class="task-list-item" dir="auto"><input type="checkbox" class="task-list-item-checkbox">Open this vault in Claude Code: <code>cd &lt;vault&gt; &amp;&amp; claude</code></li>
+<li data-task="" class="task-list-item" dir="auto"><input type="checkbox" class="task-list-item-checkbox">Say <em>"cmds onboarding"</em> — runs <code>90. Settings/91. Skills/cmds-onboarding/</code> (15 min interview)
+<ul>
+<li dir="auto">Steps 1·2: operator wikilink + batch-replace (auto)</li>
+<li dir="auto">Step 3: persona interview (5–8 min)</li>
+<li dir="auto">Step 4: BRAIN.md filled from answers</li>
+<li dir="auto">Step 5: 5–10 stub notes in <code>30. Permanent Notes/</code></li>
+<li dir="auto">Step 6 (optional): CMDS.md operator profile</li>
+</ul>
+</li>
+<li data-task="" class="task-list-item" dir="auto"><input type="checkbox" class="task-list-item-checkbox">Try <code>/status</code> and <code>/connect</code> once each (5 min)</li>
+<li data-task="" class="task-list-item" dir="auto"><input type="checkbox" class="task-list-item-checkbox">(Optional) Run gobi-onboarding skill (10 min) — for Gobi Space publish</li>
+</ul>
+<p dir="auto">After either path, you have a personalized vault ready for daily use. Welcome to CMDS.</p>
+<hr>
+<p dir="auto"><em>This vault redistributes the CMDS conventions originally authored by 구요한 (Yohan Koo). Canonical reference: <a data-tooltip-position="top" aria-label="https://system.cmdspace.work" rel="noopener nofollow" class="external-link" href="https://system.cmdspace.work" target="_blank">system.cmdspace.work</a>. Gobi integration adapted from <a data-tooltip-position="top" aria-label="https://github.com/jykim/ai4pkm-vault" rel="noopener nofollow" class="external-link" href="https://github.com/jykim/ai4pkm-vault" target="_blank">ai4pkm-vault</a> by Jin Kim.</em></p></article>
+</main>
+
+<footer class="cmds-meta">
+	
+	<a href="https://cmdspace.work" target="_blank" rel="noopener"><img src="https://cmdspace.work/assets/logos/cmds-logo-round.png" alt="CMDSPACE"></a>
+	<span>Shared via <a href="https://github.com/johnfkoo951/cmds-share" target="_blank" rel="noopener">CMDS Share</a></span>
+	<span class="cmds-theme-note">Theme: CMDS</span>
+	
+</footer>
+
+
+<script type="application/json" id="graph-data">{"title":"WELCOME","nodes":[{"label":"WELCOME","type":"note","level":0},{"label":"CMDS","type":"note","level":1},{"label":"🏛 CMDS Head Quarter","type":"note","level":1},{"label":"🏛 CMDS Guide","type":"note","level":1},{"label":"CLAUDE","type":"note","level":1},{"label":"AGENTS","type":"note","level":1},{"label":"SKILL","type":"note","level":1},{"label":"#CMDS","type":"tag","level":1},{"label":"#onboarding","type":"tag","level":1},{"label":"#guide","type":"tag","level":1},{"label":"DESIGN","type":"note","level":1},{"label":"구요한","type":"note","level":1},{"label":"BRAIN","type":"note","level":1}],"edges":[[0,1],[0,2],[0,3],[0,4],[0,5],[0,6],[0,7],[0,8],[0,9],[0,10],[0,11],[0,12],[1,2],[1,4],[1,5],[1,3],[1,7],[2,3],[2,4],[2,7],[3,4],[3,7],[4,5],[4,7],[5,2],[5,3],[5,7],[6,1],[6,3]]}</script>
+<script type="text/plain" id="md-source">CiMg8J+RiyBXZWxjb21lIHRvIHlvdXIgQ01EUyBWYXVsdAoKVGhpcyBpcyB5b3VyIGZpcnN0LXJlYWQgZG9jdW1lbnQuIEl0IHdpbGwgdGFrZSAqKmFib3V0IDE1IG1pbnV0ZXMqKiBlbmQtdG8tZW5kIGFuZCBnZXRzIHlvdXIgdmF1bHQgcGVyc29uYWxpemVkLCB5b3VyIG9wZXJhdG9yIHByb2ZpbGUgZmlsbGVkIGluLCBhbmQgeW91ciBmaXJzdCBDb25uZWN04oaSTWVyZ2XihpJEZXZlbG9w4oaSU2hhcmUgY3ljbGUgb24gcGFwZXIuCgpJZiB5b3UgcmVhZCBvbmx5IG9uZSB0aGluZywgcmVhZCB0aGlzLiBFdmVyeXRoaW5nIGVsc2UgZmxvd3MgZnJvbSBoZXJlLgoKLS0tCgojIyBXaGF0IHlvdSBqdXN0IGNsb25lZAoKQSAqKkNNRFMtY29udmVudGlvbnMgc3RhcnRlciB2YXVsdCoqLiBDTURTIGlzIGEgUGVyc29uYWwgS25vd2xlZGdlIE1hbmFnZW1lbnQgKFBLTSkgc3lzdGVtIGRlc2lnbmVkIGJ5IOq1rOyalO2VnCAoWW9oYW4gS29vKSwgcnVubmluZyBvbiBPYnNpZGlhbiwgd2l0aCBvcHRpb25hbCBbR29iaSBEZXNrdG9wXShodHRwczovL2dvYmkuYXBwKSBpbnRlZ3JhdGlvbiBzbyB5b3VyIHZhdWx0IGNhbiBwdWJsaXNoIGEgcHVibGljICJCcmFpbiIgcGFnZS4KClRoZSBmcmFtZXdvcmsgeW91J2xsIHVzZToKCi0gKio5IGNhdGVnb3JpZXMqKiAoMTAwIFRoZW1lcywgMjAwIExpdGVyYXR1cmUsIC4uLiwgOTAwIERpdmlzaW9ucykgZm9yIGNsYXNzaWZ5aW5nIGtub3dsZWRnZQotICoqQ01EUyBQcm9jZXNzKiogKENvbm5lY3Qg4oaSIE1lcmdlIOKGkiBEZXZlbG9wIOKGkiBTaGFyZSkgZm9yIG1vdmluZyBrbm93bGVkZ2UgdGhyb3VnaCBzdGFnZXMKLSAqKjggc2xhc2ggY29tbWFuZHMqKiAoYC9jb25uZWN0YCwgYC9tZXJnZWAsIGAvZGV2ZWxvcGAsIGAvc2hhcmVgLCBgL2luYm94YCwgYC9saW50YCwgYC9xdWVyeWAsIGAvc3RhdHVzYCkgdGhhdCBvcGVyYXRlIHRoZSBQcm9jZXNzIGZyb20gQ2xhdWRlIENvZGUKLSAqKjYgc3lzdGVtIGZpbGVzKiogdGhhdCBkb2N1bWVudCB0aGUgY29udmVudGlvbnMgZm9yIGJvdGggeW91IGFuZCBBSSBhc3Npc3RhbnRzIChpbmNsLiBERVNJR04ubWQsIHRoZSB2aXN1YWwtbGFuZ3VhZ2Ugc3BlYykKLSAqKjMgQnJhaW4gaWRlbnRpdHkgZmlsZXMqKiAoYEJSQUlOLm1kYCwgYEJSQUlOLmpwZ2AsIGBCUkFJTl9QUk9NUFQubWRgKSBmb3IgR29iaSBpbnRlZ3JhdGlvbgoKVGhlIGNhbm9uaWNhbCwgZnVsbHktcG9wdWxhdGVkIHJlZmVyZW5jZSB2YXVsdCBpcyB0aGUgb3BlcmF0b3IncyBvd24g4oCUIHNlZSBbc3lzdGVtLmNtZHNwYWNlLndvcmtdKGh0dHBzOi8vc3lzdGVtLmNtZHNwYWNlLndvcmspIOKAlCBidXQgKip5b3VyIHZhdWx0IHN0YXJ0cyBtb3N0bHkgZW1wdHkqKiwgd2l0aCBjb252ZW50aW9ucyBiYWtlZCBpbi4gWW91J2xsIGZpbGwgaXQgYXMgeW91IGdvLgoKLS0tCgojIyBSZWFkIHRoZXNlIGluIG9yZGVyICgxMCBtaW4pCgpCZWZvcmUgZG9pbmcgYW55dGhpbmcsIHNraW0gdGhlIDYgc3lzdGVtIGZpbGVzLiBZb3UgZG9uJ3QgbmVlZCB0byBtZW1vcml6ZSDigJQganVzdCBrbm93IHdoYXQgZWFjaCBvbmUgaXMgKmZvciogc28geW91IGNhbiByZXR1cm4gdG8gdGhlIHJpZ2h0IG9uZSBsYXRlci4KCnwgIyB8IEZpbGUgfCBXaHkgcmVhZCBpdCB8CnwtLS18LS0tLS0tfC0tLS0tLS0tLS0tLS18CnwgMSB8ICoqW1tDTURTXV0qKiAocHJlY2VkZW5jZSAzKSB8IFRoZSAic3RvcnkiIOKAlCB3aGF0IENNRFMgaXMsIHRoZSA5IGNhdGVnb3JpZXMgZXhwbGFpbmVkLCB0aGUgNC1zdGFnZSBQcm9jZXNzIHwKfCAyIHwgKipbW/Cfj5sgQ01EUyBIZWFkIFF1YXJ0ZXJdXSoqIChwcmVjZWRlbmNlIDUpIHwgQSBmbGF0IGxpc3Qgb2YgYWxsIDkxIHN1Yi1jYXRlZ29yaWVzIOKAlCB5b3VyIG1hcCB8CnwgMyB8ICoqW1vwn4+bIENNRFMgR3VpZGVdXSoqIChwcmVjZWRlbmNlIDQpIHwgVGhlIHN0YW5kYXJkcyDigJQgUHJvcGVydGllcywgbmFtaW5nLCBmaWxlIHByZWZpeGVzICh5b3UnbGwgY29tZSBiYWNrIGhlcmUgb2Z0ZW4pIHwKfCA0IHwgKipbW0NMQVVERV1dKiogKHByZWNlZGVuY2UgMSkgfCBUZWNobmljYWwgcnVsZXMgZm9yIENsYXVkZSBDb2RlIChza2ltIG9ubHkgaWYgeW91J2xsIHVzZSBDbGF1ZGUgQ29kZSkgfAp8IDUgfCAqKltbQUdFTlRTXV0qKiAocHJlY2VkZW5jZSAyKSB8IFNhbWUgYXMgIzQgYnV0IGZvciBHZW1pbmkgQ0xJIC8gQ29kZXggLyBDdXJzb3IgLyBldGMuIHwKfCA2IHwgKipbW0RFU0lHTl1dKiogKHByZWNlZGVuY2UgNikgfCBWaXN1YWwgbGFuZ3VhZ2Ugc3BlYyDigJQgQ0kgY29sb3IgdG9rZW5zLCBBbnRpLVNsb3AgcnVsZXMsIHRlbXBsYXRlIGNhdGFsb2cgKHNraW0gaWYgeW91J2xsIG1ha2Ugc2xpZGVzIC8gUERGcyAvIHdlYikgfAoKPiDwn5KhICoqYHByZWNlZGVuY2VgKiogaXMgdGhlIGxvYWQgb3JkZXIgaWYgbXVsdGlwbGUgQUkgYXNzaXN0YW50cyBhcmUgcmVhZGluZyBkb2NzLiBMb3dlciBudW1iZXIgPSByZWFkIGZpcnN0LiBDTEFVREUubWQgKDEpIGlzIHRoZSBtb3N0IGF1dGhvcml0YXRpdmUgZm9yIGNvZGUgd29ya2Zsb3dzOyBIUSAoNSkgaXMganVzdCBuYXZpZ2F0aW9uLgoKLS0tCgojIyDwn6qqIFN0ZXAgMSDigJQgUGVyc29uYWxpemUgeW91ciBvcGVyYXRvciBwcm9maWxlICg1IG1pbikKCj4g8J+SoSAqKlR3byBwYXRocyoqOgo+Cj4gLSAqKk1hbnVhbCBwYXRoIChTdGVwcyAxQeKAkzFEIGJlbG93KSoqOiB5b3UgZGVjaWRlIGVhY2ggcGllY2UsIHJ1biB0aGUgYmF0Y2gtcmVwbGFjZSB5b3Vyc2VsZiwgZmlsbCBCUkFJTi5tZCBieSBoYW5kLiBCZXN0IHdoZW4geW91IHdhbnQgZnVsbCBjb250cm9sLgo+IC0gKipHdWlkZWQgcGF0aCAoY21kcy1vbmJvYXJkaW5nIHNraWxsKSoqOiBvcGVuIENsYXVkZSBDb2RlIGluIHRoaXMgdmF1bHQgYW5kIHNheSAqImNtZHMgb25ib2FyZGluZyIqIOKAlCBhIDE1LW1pbiBpbnRlcnZpZXctbGVkIHNraWxsIHRoYXQgcnVucyB0aGUgdXNlci1zY29wZSBiYXRjaC1yZXBsYWNlLCBmaWxscyBCUkFJTi5tZCBmcm9tIHlvdXIgYW5zd2VycywgYW5kIGNyZWF0ZXMgNeKAkzEwIHRoZW1lZCBzdHViIG5vdGVzIGluIGAzMC4gUGVybWFuZW50IE5vdGVzL2AuIFNraWxsIGxvY2F0aW9uOiBgOTAuIFNldHRpbmdzLzkxLiBTa2lsbHMvY21kcy1vbmJvYXJkaW5nL1NLSUxMLm1kYC4gQmVzdCB3aGVuIHlvdSB3YW50IGNvbnRleHQgZmlsbGVkIGZhc3QuCj4KPiBCb3RoIHBhdGhzIHByb2R1Y2UgdGhlIHNhbWUgZW5kIHN0YXRlLiBQaWNrIG9uZS4gWW91IGNhbiBhbHNvIHN0YXJ0IHdpdGggdGhlIGd1aWRlZCBwYXRoIGFuZCB0dW5lIGJ5IGhhbmQgYWZ0ZXJ3YXJkLgoKIyMjIEF1dGhvcnNoaXAgcG9saWN5IOKAlCB0d28gZGlzdGluY3QgaWRlbnRpdGllcwoKVGhpcyBzdGFydGVyIHZhdWx0IGhhcyAqKnR3byBraW5kcyBvZiBgYXV0aG9yOmAgZmllbGQqKjoKCjEuICoqU3lzdGVtIGZpbGUgYXV0aG9yc2hpcCoqID0gYFtb6rWs7JqU7ZWcXV1gICh0aGUgb3JpZ2luYWwgQ01EUyBhdXRob3IpLiBUaGlzIGlzICoqYXR0cmlidXRpb24qKiDigJQgaXQgaWRlbnRpZmllcyB3aG8gd3JvdGUgdGhlIHN5c3RlbSBmaWxlcyAoQ0xBVURFLm1kLCBBR0VOVFMubWQsIENNRFMubWQsIPCfj5sgQ01EUyBHdWlkZS5tZCwg8J+PmyBDTURTIEhlYWQgUXVhcnRlci5tZCwgV0VMQ09NRS5tZCwgUkVBRE1FLm1kKSwgdGhlIHNsYXNoIGNvbW1hbmRzLCB0aGUgcnVsZXMsIGFuZCB0aGUgc2tpbGxzLiAqKkRvIG5vdCBjaGFuZ2UgdGhlc2UuKiogV2hlbiB5b3UgcHVibGlzaCBvciBmb3JrIHlvdXIgdmF1bHQsIHRoaXMgYXR0cmlidXRpb24gc2hvdWxkIHJlbWFpbiBgW1vqtazsmpTtlZxdXWAgc28gdGhlIHVwc3RyZWFtIGxpbmVhZ2UgaXMgcHJlc2VydmVkLgoKMi4gKipZb3VyLW5vdGUgYXV0aG9yc2hpcCoqID0gYFtbTWVdXWAgcGxhY2Vob2xkZXIsIHdoaWNoIHRoZSBvbmJvYXJkaW5nIGZsb3cgYmF0Y2gtcmVwbGFjZXMgd2l0aCBgW1s8WW91ciBOYW1lPl1dYC4gVGhpcyBhcHBlYXJzIGluIHRlbXBsYXRlcyBhbmQgZXhhbXBsZSBmcm9udG1hdHRlcnMgdGhhdCAqeW91KiB3aWxsIHVzZSB3aGVuIGNyZWF0aW5nIHlvdXIgb3duIG5vdGVzIChkYWlseSBub3RlcywgcGVybWFuZW50IG5vdGVzLCBCUkFJTi5tZCwgY2FwdHVyZXMpLiAqKlRoZXNlIHNob3VsZCBiZWNvbWUgeW91ciBuYW1lLioqCgpUaGUgdmF1bHQgb3BlcmF0b3IgcHJvZmlsZSBpbiBbW0NNRFNdXSBhbHNvIGhhcyBhIGAoWW91ciBOYW1lKWAgcGxhY2Vob2xkZXIgc2VjdGlvbiDigJQgZmlsbCBpdCBpbiBvbmNlIGR1cmluZyBvbmJvYXJkaW5nIHNvIEFJIGFzc2lzdGFudHMgZ2l2ZSBjb250ZXh0LWF3YXJlIGFuc3dlcnMuCgojIyMgMUEuIFBpY2sgeW91ciBvcGVyYXRvciB3aWtpbGluawoKRGVjaWRlIHdoYXQgbmFtZSB5b3VyIGBhdXRob3JgIGZpZWxkIHNob3VsZCB1c2UuIE9wdGlvbnM6Cgp8IE9wdGlvbiB8IEV4YW1wbGUgfCBQcm9zIHwgQ29ucyB8CnwtLS0tLS0tLXwtLS0tLS0tLS18LS0tLS0tfC0tLS0tLXwKfCBSZWFsIG5hbWUgfCBgW1tKb2huIERvZV1dYCB8IElkZW50aWZpZXMgeW91IGFjcm9zcyBub3RlcyB8IFB1YmxpYy1mYWNpbmcgaWYgeW91IHB1Ymxpc2ggdmF1bHQgfAp8IEhhbmRsZSB8IGBbW2pvaG5kb2VdXWAgfCBQc2V1ZG9ueW1vdXMsIGNvbnNpc3RlbnQgfCBMZXNzIG5hdHVyYWwgaW4gY2l0YXRpb25zIHwKfCBLb3JlYW4gfCBgW1vtmY3quLjrj5ldXWAgfCBOYXRpdmUgbGFuZ3VhZ2UgZXJnb25vbWljcyB8IE1peGVkIHdpdGggRW5nbGlzaCBlbHNld2hlcmUgfAoKUGljayBvbmUuIFlvdSBjYW4gY2hhbmdlIGxhdGVyIChqdXN0IHJlLXJ1biB0aGUgcml0dWFsIGJlbG93KS4KCiMjIyAxQi4gUnVuIHRoZSAidXNlci1zY29wZSBhdXRob3IgYmF0Y2gtcmVwbGFjZSIgcml0dWFsCgpPcGVuIHRoaXMgdmF1bHQgZm9sZGVyIGluIENsYXVkZSBDb2RlIChgY2QgPHZhdWx0LXBhdGg+ICYmIGNsYXVkZWApLiBUaGVuIHBhc3RlIHRoaXMgcHJvbXB0IHZlcmJhdGltLCByZXBsYWNpbmcgYDxZb3VyIE5hbWU+YCB3aXRoIHdoYXQgeW91IGNob3NlOgoKPiAqKlByb21wdCBmb3IgQ2xhdWRlIENvZGU6KioKPgo+IGBgYAo+IEJhdGNoLXJlcGxhY2UgYFtbTWVdXWAgd2l0aCBgW1s8WW91ciBOYW1lPl1dYCBhY3Jvc3MgdGhpcyB2YXVsdCDigJQgYnV0IE9OTFkgaW4gdXNlci1wZXJzb25hbGl6YXRpb24gc2NvcGUuCj4KPiBJTkNMVURFICh0aGVzZSBhcmUgcGxhY2Vob2xkZXJzIG1lYW50IGZvciB0aGUgb3BlcmF0b3IpOgo+IC0gYEJSQUlOLm1kYCBhbmQgYEJSQUlOX1BST01QVC5tZGAgKHlvdXIgQnJhaW4gaWRlbnRpdHkpCj4gLSBgMDAuIEluYm94L2AgKGFueSBub3RlcyB5b3UndmUgc3RhcnRlZCkKPiAtIGAzMC4gUGVybWFuZW50IE5vdGVzL2AsIGAyMC4gTGl0ZXJhdHVyZSBOb3Rlcy9gLCBgNjAuIENvbGxlY3Rpb25zL2AgKHlvdXIgY2FwdHVyZXMpCj4gLSBgOTAuIFNldHRpbmdzLzkxLiBUZW1wbGF0ZXMvYCAobm90ZSB0ZW1wbGF0ZXMgeW91J2xsIHVzZSkKPgo+IEVYQ0xVREUgKHRoZXNlIGFyZSBzeXN0ZW0tZmlsZSBhdXRob3JzaGlwIOKAlCBsZWF2ZSB0aGVpciBhdXRob3IgZmllbGRzIGFzIGBbW+q1rOyalO2VnF1dYCk6Cj4gLSB2YXVsdCByb290IHN5c3RlbSBmaWxlczogQ0xBVURFLm1kLCBBR0VOVFMubWQsIENNRFMubWQsIPCfj5sgQ01EUyBHdWlkZS5tZCwg8J+PmyBDTURTIEhlYWQgUXVhcnRlci5tZCwgV0VMQ09NRS5tZCwgUkVBRE1FLm1kCj4gLSBgLmNsYXVkZS9jb21tYW5kcy9gLCBgLmNsYXVkZS9ydWxlcy9gCj4gLSBgOTAuIFNldHRpbmdzLzk0LiBBZ2VudCBTZXR0aW5ncy9jbGF1ZGUvY29tbWFuZHMvYCAobWlycm9yKQo+IC0gYDkwLiBTZXR0aW5ncy85MS4gU2tpbGxzL2AgKGNtZHMtb25ib2FyZGluZywgZ29iaS1vbmJvYXJkaW5nLCBnb2JpLWNsaSwgZGFpbHktYm9vay11cGRhdGUpCj4gLSBgOTAuIFNldHRpbmdzLzkyLiBQcm9tcHRzL2AKPgo+IE5vdGU6IEJvZHktdGV4dCBvY2N1cnJlbmNlcyBvZiBgW1tNZV1dYCBpbnNpZGUgdGhlIEVYQ0xVREUgZmlsZXMgKGUuZy4gZXhhbXBsZSBmcm9udG1hdHRlciBzbmlwcGV0cyBzaG93aW5nIHdoYXQgeW91ciBub3RlcyBzaG91bGQgbG9vayBsaWtlKSBzaG91bGQgYWxzbyByZW1haW4gdW5jaGFuZ2VkIOKAlCB0aGV5IGFyZSAqcGxhY2Vob2xkZXJzIGZvciB5b3VyIGZ1dHVyZSBub3RlcyosIG5vdCBhdXRob3JzaGlwIG9mIHRoZSBzeXN0ZW0gZmlsZSBpdHNlbGYuCj4KPiBVc2UgZXhhY3Qtc3RyaW5nIHJlcGxhY2UgKGNhc2Utc2Vuc2l0aXZlKS4gQWZ0ZXIgcmVwbGFjaW5nLCBydW4gYSB2ZXJpZmljYXRpb24gZ3JlcCBhY3Jvc3MgdGhlIElOQ0xVREUgc2NvcGUgdG8gY29uZmlybSB6ZXJvIHJlc2lkdWFsIGBbW01lXV1gIHRoZXJlLCBhbmQgcmVwb3J0IGNvdW50cyBwZXIgZGlyZWN0b3J5Lgo+IGBgYAoKT3IsIGlmIHlvdSBwcmVmZXIgdGhlIHNoZWxsOgoKYGBgYmFzaApjZCA8eW91ci12YXVsdC1wYXRoPgoKIyBQcmV2aWV3IGZpcnN0IChsaW1pdGVkIHRvIHVzZXItcGVyc29uYWxpemF0aW9uIHNjb3BlKQpncmVwIC1ybiAnXFtcW01lXF1cXScgLS1pbmNsdWRlPScqLm1kJyBCUkFJTi5tZCBCUkFJTl9QUk9NUFQubWQgIjAwLiBJbmJveCIgIjMwLiBQZXJtYW5lbnQgTm90ZXMiICIyMC4gTGl0ZXJhdHVyZSBOb3RlcyIgIjYwLiBDb2xsZWN0aW9ucyIgIjkwLiBTZXR0aW5ncy85MS4gVGVtcGxhdGVzIiAyPi9kZXYvbnVsbAoKIyBSdW4gdGhlIHJlcGxhY2UgKG9ubHkgaW4gdXNlci1zY29wZSBkaXJzL2ZpbGVzOyBzeXN0ZW0gZmlsZXMgdW50b3VjaGVkKQpmb3IgdGFyZ2V0IGluIEJSQUlOLm1kIEJSQUlOX1BST01QVC5tZCAiMDAuIEluYm94IiAiMzAuIFBlcm1hbmVudCBOb3RlcyIgIjIwLiBMaXRlcmF0dXJlIE5vdGVzIiAiNjAuIENvbGxlY3Rpb25zIiAiOTAuIFNldHRpbmdzLzkxLiBUZW1wbGF0ZXMiOyBkbwogIGlmIFsgLWUgIiR0YXJnZXQiIF07IHRoZW4KICAgIGZpbmQgIiR0YXJnZXQiIC1uYW1lICcqLm1kJyAtdHlwZSBmIC1leGVjIHNlZCAtaSAnJyAncy9cW1xbTWVcXVxdL1tbWW91ciBOYW1lXV0vZycge30gKyAyPi9kZXYvbnVsbAogIGZpCmRvbmUKCiMgVmVyaWZ5IHplcm8gcmVzaWR1ZSBpbiB1c2VyIHNjb3BlCmdyZXAgLXJuICdcW1xbTWVcXVxdJyAtLWluY2x1ZGU9JyoubWQnIEJSQUlOLm1kIEJSQUlOX1BST01QVC5tZCAiMDAuIEluYm94IiAiMzAuIFBlcm1hbmVudCBOb3RlcyIgIjIwLiBMaXRlcmF0dXJlIE5vdGVzIiAiNjAuIENvbGxlY3Rpb25zIiAiOTAuIFNldHRpbmdzLzkxLiBUZW1wbGF0ZXMiIDI+L2Rldi9udWxsICYmIGVjaG8gIlJFTUFJTklORyBBQk9WRSIgfHwgZWNobyAiVVNFUi1TQ09QRSBDTEVBTiIKYGBgCgo+ICoqV2h5IGEgd2lraWxpbms/KiogQXV0aG9yIGFzIGBbW1lvdXIgTmFtZV1dYCBtZWFucyB5b3UgY2FuIGxhdGVyIGNyZWF0ZSBhIFBlb3BsZSBub3RlIGBZb3VyIE5hbWUubWRgIGluIGA2MC4gQ29sbGVjdGlvbnMvNjEuIFBlb3BsZS9gLCBhbmQgT2JzaWRpYW4ncyBiYWNrbGluayBwYW5lbCB3aWxsIHNob3cgZXZlcnkgbm90ZSB5b3UgYXV0aG9yZWQuIFRoaXMgaXMgYSBzdGFuZGFyZCBDTURTIHBhdHRlcm4uCj4KPiAqKldoeSBub3QgdG91Y2ggc3lzdGVtIGZpbGVzPyoqIFRoZSBzeXN0ZW0gZmlsZXMgKENMQVVERS5tZCwgQUdFTlRTLm1kLCBDTURTLm1kLCBldGMuKSBhcmUgYXV0aG9yZWQgYnkgW1vqtazsmpTtlZxdXSAob3JpZ2luYWwgQ01EUyBhdXRob3IpLiBUaGVpciBgYXV0aG9yOmAgZmllbGQgaXMgKiphdHRyaWJ1dGlvbioqLCBub3QgeW91ciBwZXJzb25hbGl6YXRpb24gc2xvdC4gUmVwbGFjaW5nIGl0IHdvdWxkIGZhbHNlbHkgY2xhaW0geW91IHdyb3RlIHRoZW0uCgojIyMgMUMuIEZpbGwgaW4gdGhlIG9wZXJhdG9yIHByb2ZpbGUgaW4gQ01EUy5tZAoKT3BlbiBbW0NNRFNdXSBhbmQgZmluZCB0aGUgc2VjdGlvbiAqKiIjIyBUaGUgVmF1bHQgT3BlcmF0b3I6IChZb3VyIE5hbWUpIioqLiBJdCBjb250YWlucyBhIFRPRE8gY29tbWVudCB3aXRoIGEgdGVtcGxhdGUuIEZpbGwgaXQgd2l0aDoKCi0gKipSb2xlKio6IO2VmeyDnSAvIOyXsOq1rOyekCAvIOyghOusuOqwgCAvIO2UhOumrOuenOyEnCAvIOqwnOyduOyCrOyXheyekCAvIO2ajOyCrOybkCAvIOyVhOustOqxsOuCmCDigJQg7J6Q6riwIOyngeyXhSDtlZwg7KSECi0gKipQcmltYXJ5IHdvcmsqKjog7KeA6riIIOyLnOqwhOydhCDqsIDsnqUg66eO7J20IOyTsOuKlCDtmZzrj5kKLSAqKkJhY2tncm91bmQqKjog7ZWZ66Clwrfqsr3roKUg7ZWcIOykhCDsmpTslb0KLSAqKkN1cnJlbnQgRm9jdXMgQXJlYXMqKjogMS006rCcIOKAlCDsp4DquIgg6rCA7J6lIO2ZnOuwnO2VmOqyjCDrhbjtirjqsIAg7IyT7J28IOyjvOygnOuTpAotICoqUHJpbWFyeSBBY3Rpdml0aWVzKio6IOunpOydvC/rp6Tso7wg7ZWY64qUIOydvAoKV2h5IHRoaXMgbWF0dGVyczogd2hlbiB5b3UgYXNrIENsYXVkZSAvIEdlbWluaSAvIENoYXRHUFQgYSBxdWVzdGlvbiBhbmQgdGhleSBoYXZlIGFjY2VzcyB0byBDTURTLm1kLCB0aGlzIHByb2ZpbGUgc2hhcGVzIHdoZXRoZXIgdGhleSBnaXZlIHlvdSBhIGdlbmVyaWMgYW5zd2VyIG9yIGEgY29udGV4dC1hd2FyZSBhbnN3ZXIuIFRoZSByaWNoZXIgdGhpcyBzZWN0aW9uLCB0aGUgc21hcnRlciB5b3VyIEFJIGFzc2lzdGFudHMgZ2V0LgoKIyMjIDFELiBQZXJzb25hbGl6ZSBCUkFJTi5tZAoKW1tCUkFJTl1dIGlzIHRoZSBwdWJsaWMgZmFjZSBvZiB5b3VyIHZhdWx0IG9uIEdvYmkgU3BhY2UgKGlmIHlvdSBjb25uZWN0IEdvYmkgbGF0ZXIpLiBPcGVuIGl0IGFuZCByZXBsYWNlIHBsYWNlaG9sZGVyIGxpbmVzOgoKLSBgKipOYW1lKio6ICh5b3VyIG5hbWUpYAotIGAqKlJvbGUqKjogKHN0dWRlbnQgLyByZXNlYXJjaGVyIC8gaG9iYnlpc3Qg4oCUIGFueXRoaW5nKWAKLSBgKipBcmVhcyBvZiBpbnRlcmVzdCoqOiAuLi5gCi0gVGhlICJQaW5uZWQiIGxpc3Qgb2Ygbm90ZXMgdG8gaGlnaGxpZ2h0CgpJZiB5b3UgZG9uJ3QgcGxhbiB0byB1c2UgR29iaSB5ZXQsIEJSQUlOLm1kIHN0aWxsIGFjdHMgYXMgeW91ciAiQWJvdXQgTWUiIHBhZ2UgaW5zaWRlIHRoZSB2YXVsdC4KCi0tLQoKIyMg8J+agCBTdGVwIDIg4oCUIFRyeSB0aGUgQ01EUyBQcm9jZXNzIGNvbW1hbmRzICg1IG1pbikKClRoZSB2YXVsdCBzaGlwcyA4IHNsYXNoIGNvbW1hbmRzIHRoYXQgb3BlcmF0ZSB0aGUgQ01EUyBQcm9jZXNzLiBUaGV5IGxpdmUgaW4gYC5jbGF1ZGUvY29tbWFuZHMvYC4gVG8gdXNlIHRoZW0sIG9wZW4gdGhpcyB2YXVsdCBpbiBDbGF1ZGUgQ29kZSAoYGNsYXVkZWAgZnJvbSB0ZXJtaW5hbCksIHRoZW4gdHlwZSBgLzxjb21tYW5kPmAuCgojIyMgMkEuIFF1aWNrIG9yaWVudGF0aW9uICh6ZXJvIGRpYWxvZ3MpCgpgYGAKL3N0YXR1cwpgYGAKClJldHVybnMgYSBvbmUtc2NyZWVuIHNuYXBzaG90OiBob3cgbWFueSBub3RlcyBwZXIgc3RhZ2UsIHdoYXQgdG8gZG8gbmV4dC4gT24gYSBmcmVzaCB2YXVsdCwgaXQnbGwgdGVsbCB5b3UgImV2ZXJ5dGhpbmcncyBlbXB0eSDigJQgc3RhcnQgd2l0aCAvaW5ib3ggb3IgL2Nvbm5lY3QuIgoKIyMjIDJCLiBDYXB0dXJlIHlvdXIgZmlyc3QgaWRlYSAoQ29ubmVjdCkKClBpY2sgc29tZXRoaW5nIG9uIHlvdXIgbWluZCByaWdodCBub3cg4oCUIGEgcXVlc3Rpb24sIGEgZmFjdCwgYSBmcmFnbWVudC4gVGhlbiB0eXBlOgoKYGBgCi9jb25uZWN0ICI8eW91ciBpZGVhIGluIG9uZSBzZW50ZW5jZT4iCmBgYAoKVGhlIGNvbW1hbmQgd2lsbCAoYSkgY2xhc3NpZnkgaXQgYXMgaW50ZXJlc3QvdG9waWMvdmFyaWFibGUvdGVybWlub2xvZ3ksIChiKSBjcmVhdGUgYSBzdHViIG5vdGUgaW4gdGhlIFRoZW1lIHN0YWdlLCAoYykgbGluayBpdCBhcHByb3ByaWF0ZWx5LiBBdXRvLXBpbG90IGlmIGlucHV0IGlzIHVuYW1iaWd1b3VzLCBhc2tzIGF0IG1vc3QgMSBxdWVzdGlvbiBpZiBub3QuCgojIyMgMkMuIChMYXRlciwgYWZ0ZXIgeW91IGhhdmUgfjMgbm90ZXMgb24gdGhlIHNhbWUgdG9waWMpIFN5bnRoZXNpemUKCldoZW4geW91IGhhdmUgbXVsdGlwbGUgbm90ZXMgYWJvdXQgYSB0b3BpYyBhbmQgd2FudCBvbmUgY2xlYW4gTGl0ZXJhdHVyZSBub3RlIHRoYXQgaW50ZWdyYXRlcyB0aGVtOgoKYGBgCi9tZXJnZSA8dG9waWM+CmBgYAoKVGhpcyBpcyB0aGUgaGVhdmllc3QgY29tbWFuZCDigJQgaXQnbGwgZGlhbG9nIHdpdGggeW91IGFib3V0IHB1cnBvc2UsIGNhbmRpZGF0ZSBub3RlcywgYW5nbGUsIGFuZCBsZXQgeW91IHJldmlldyB0aGUgZHJhZnQuIFRoZSBvdXRwdXQgZ29lcyB0byBgMzAuIFBlcm1hbmVudCBOb3Rlcy9gIChvciBhcHByb3ByaWF0ZSBsb2NhdGlvbikgY2xhc3NpZmllZCBhcyBg8J+TmiAyMTAgTGl0ZXJhdHVyZSBSZXZpZXdzYCAob3Igc2ltaWxhcikuCgojIyMgMkQuIEhlYWx0aCBjaGVjawoKQWZ0ZXIgYSB3ZWVrIG9yIHR3bzoKCmBgYAovbGludCBpbmJveApgYGAKClJlcG9ydHMgb3JwaGFuIG5vdGVzLCBjb250cmFkaWN0aW9ucywgc3RhbGUgZnJvbnRtYXR0ZXIuIFJlYWQtb25seSDigJQgd29uJ3QgY2hhbmdlIGFueXRoaW5nIHVubGVzcyB5b3UgYXNrLgoKIyMjIFdoYXQgYWJvdXQgL2RldmVsb3AsIC9zaGFyZSwgL3F1ZXJ5PwoKLSBgL2RldmVsb3BgIOKAlCB3aGVuIHlvdSB3YW50IHRvIGFwcGx5IGEgbWV0aG9kIHRvIGRhdGEsIG9yIGJ1aWxkIGNvZGUvcHJvbXB0L2N1cnJpY3VsdW0gZnJvbSBleGlzdGluZyBub3RlcwotIGAvc2hhcmVgIOKAlCB3aGVuIHlvdSB3YW50IHRvIHR1cm4gYSBzeW50aGVzaXplZCBub3RlIGludG8gYSBuZXdzbGV0dGVyIC8gc2xpZGUgZGVjayAvIFNOUyBwb3N0IChhdXRvLWRlbGVnYXRlcyB0byB3cml0ZXIgc2tpbGxzKQotIGAvcXVlcnlgIOKAlCB3aGVuIHlvdSB3YW50IHRvIGFzayBhIHF1ZXN0aW9uIGFjcm9zcyB5b3VyIHZhdWx0IGFuZCBoYXZlIHRoZSBhbnN3ZXIgZmlsZWQgYmFjayBhcyBhIHBlcm1hbmVudCBub3RlCgpZb3UgZG9uJ3QgbmVlZCBhbGwgOCBmcm9tIGRheSBvbmUuICoqYC9zdGF0dXNgLCBgL2luYm94YCwgYC9jb25uZWN0YCwgYC9tZXJnZWAgYXJlIHRoZSBkYWlseSBjb3JlLioqIFRoZSBvdGhlcnMgY29tZSBpbiBhcyB5b3VyIHZhdWx0IGdyb3dzLgoKRnVsbCByZWZlcmVuY2U6IFtbQ0xBVURFXV0gIkNNRFMgUHJvY2VzcyBDb21tYW5kIFN1aXRlIiBzZWN0aW9uLgoKLS0tCgojIyDwn4yQIFN0ZXAgMyDigJQgQ29ubmVjdCBHb2JpIChvcHRpb25hbCwgKzEwIG1pbikKCklmIHlvdSB3YW50IGEgcHVibGljIEJyYWluIHBhZ2Ugb24gR29iaSBTcGFjZToKCjEuIEluc3RhbGwgW0dvYmkgRGVza3RvcF0oaHR0cHM6Ly9nb2JpLmFwcCkgb3IgYG5wbSBpbnN0YWxsIC1nIEBnb2JpLWFpL2NsaWAKMi4gRm9sbG93IHRoZSAqKmdvYmktb25ib2FyZGluZyoqIHNraWxsIGF0IGA5MC4gU2V0dGluZ3MvOTEuIFNraWxscy9nb2JpLW9uYm9hcmRpbmcvU0tJTEwubWRgCgpUaGF0IHNraWxsIHdhbGtzIDggc3RlcHMgZnJvbSBgZ29iaSBpbml0YCB0byBhIHB1Ymxpc2hlZCBCcmFpbiBVcGRhdGUgb24gYGdvYmlzcGFjZS5jb20vQDx5b3VyLXNsdWc+YC4gVG90YWwgdGltZSB+MTAgbWluLgoKSWYgeW91IGRvbid0IHdhbnQgR29iaSByaWdodCBub3csICoqc2tpcCB0aGlzIHN0ZXAqKi4gVGhlIHZhdWx0IHdvcmtzIGZ1bGx5IGFzIGEgbG9jYWwgUEtNIHdpdGhvdXQgR29iaS4gWW91IGNhbiBjb21lIGJhY2sgbGF0ZXIuCgotLS0KCiMjIPCfk5ogU3RlcCA0IOKAlCBCb29rbWFyayB0aGVzZSBmb3Igb25nb2luZyByZWZlcmVuY2UKCk9uY2UgeW91J3JlIHBhc3Qgb25ib2FyZGluZywgdGhlIGRvY3MgeW91J2xsIGNvbWUgYmFjayB0byBtb3N0OgoKLSBbW/Cfj5sgQ01EUyBHdWlkZV1dIOKAlCB3aGVuIGNyZWF0aW5nIGEgbmV3IG5vdGUgYW5kIHdhbnQgdGhlIHJpZ2h0IFByb3BlcnRpZXMgLyB0eXBlIC8gdGVtcGxhdGUKLSBbW/Cfj5sgQ01EUyBIZWFkIFF1YXJ0ZXJdXSDigJQgd2hlbiB5b3UndmUgZm9yZ290dGVuIHdoaWNoIPCfk5ogc3ViLWNhdGVnb3J5IGEgbm90ZSBiZWxvbmdzIGluCi0gW1tDTEFVREVdXSAiQ01EUyBQcm9jZXNzIENvbW1hbmQgU3VpdGUiIOKAlCB3aGVuIHlvdSdyZSBub3Qgc3VyZSB3aGljaCBzbGFzaCBjb21tYW5kIHRvIHVzZQotIGAuY2xhdWRlL3J1bGVzL2Zyb250bWF0dGVyLXN0YW5kYXJkLm1kYCDigJQgd2hlbiBZQU1MIGZvcm1hdHRpbmcgZmVlbHMgZmlkZGx5Ci0gYC5jbGF1ZGUvcnVsZXMvd2lraWxpbmstcnVsZXMubWRgIOKAlCB3aGVuIGEgd2lraWxpbmsgaXNuJ3QgcmVzb2x2aW5nCgotLS0KCiMjIPCfm7AgU3RlcCA1IOKAlCBBZGRpbmcgc2F0ZWxsaXRlIHZhdWx0cyAobXVjaCBsYXRlciwgb3B0aW9uYWwpCgpUaGUgQ01EUyBhcmNoaXRlY3R1cmUgc3VwcG9ydHMgKipzYXRlbGxpdGUgdmF1bHRzKiog4oCUIHNlcGFyYXRlIE9ic2lkaWFuIHZhdWx0cyB3aXRoIHNwZWNpYWxpemVkIHB1cnBvc2VzIChlLmcuLCBhIEthcnBhdGh5LXN0eWxlIExMTSBXaWtpIHdoZXJlIGFuIExMTSBpbmdlc3RzIGV4dGVybmFsIHNvdXJjZXMgYW5kIGNvbXBpbGVzIHRoZW0gaW50byBhIHBlcnNpc3RlbnQgd2lraSkuCgpZb3UgZG9uJ3QgbmVlZCB0aGlzIGZyb20gZGF5IG9uZS4gV2hlbiB5b3UgZG8gd2FudCBvbmU6CgoxLiBDcmVhdGUgYSBzZXBhcmF0ZSBPYnNpZGlhbiB2YXVsdCBmb2xkZXIgKGluZGVwZW5kZW50IGdpdCByZXBvIHJlY29tbWVuZGVkKQoyLiBBZGQgYSByb3cgdG8gdGhlICJTYXRlbGxpdGUgVmF1bHRzIiB0YWJsZSBpbiBbW/Cfj5sgQ01EUyBIZWFkIFF1YXJ0ZXJdXSBhbmQgW1tDTEFVREVdXQozLiBVc2UgdGV4dCByZWZlcmVuY2VzIChg4oaSIDxWYXVsdCBOYW1lPjogPHBhZ2UgbmFtZT5gKSBmb3IgY3Jvc3MtdmF1bHQgY2l0YXRpb24gc2luY2UgT2JzaWRpYW4gd2lraWxpbmtzIGRvbid0IGNyb3NzIHZhdWx0IGJvdW5kYXJpZXMKNC4gT3B0aW9uYWxseSByZWdpc3RlciB0aGUgc2F0ZWxsaXRlIHdpdGggYHFtZCBNQ1BgIG9yIHNpbWlsYXIgc28gQ2xhdWRlIENvZGUgY2FuIHNlYXJjaCBpdCBmcm9tIGFueSBjd2QKClRoZSBtb3RoZXJzaGlw4oaUc2F0ZWxsaXRlIGNvbnZlbnRpb24gaXMgZnVsbHkgZG9jdW1lbnRlZCBpbiBbW0NMQVVERV1dICLwn5uwIFNhdGVsbGl0ZSBWYXVsdHMiIHNlY3Rpb24uIExvb2sgYXQgaXQgd2hlbiBuZWVkZWQ7IGlnbm9yZSB1bnRpbCB0aGVuLgoKLS0tCgojIyDwn6qnIENoZWF0c2hlZXQg4oCUIERhaWx5IC8gV2Vla2x5IFJoeXRobQoKYGBgCu2VmOujqCDsi5zsnpE6ICAgICAgICAvc3RhdHVzICAgICAgICAgICAgICAgICAo67Cp7ZalIOyeoeq4sCkKaW5ib3gg6rCA65OdOiAgICAgICAvaW5ib3gg4oaSIC9jb25uZWN0ICAgICAgIChjYXB0dXJlKQrso7zqsIQg7KCV66asOiAgICAgICAgL21lcmdlIDx0b3BpYz4gICAgICAgICAgKHN5bnRoZXNpcykK7IKw7Lac66y8IOunjOuTpOq4sDogICAgIC9kZXZlbG9wIG9yIC9zaGFyZSAgICAgIChhcnRpZmFjdCkK67O87Yq4IOychOyDneygkOqygDogICAgIC9saW50IDxzY29wZT4gICAgICAgICAgIChyZWFkLW9ubHkpCuu5oOuluCDsp4jrrLg6ICAgICAgICAvcXVlcnkgPHRvcGljPiAgICAgICAgICAo6rKA7IOJICsg7ZWp7ISxKQpgYGAKCi0tLQoKIyMg4pyFIE9uYm9hcmRpbmcgY2hlY2tsaXN0CgojIyMgTWFudWFsIHBhdGgKLSBbIF0gUmVhZCBDTURTLm1kIGFuZCBIUS5tZCAoMTAgbWluKQotIFsgXSBTa2ltIPCfj5sgQ01EUyBHdWlkZSBhbmQgQ0xBVURFLm1kICg1IG1pbikKLSBbIF0gUGljayBvcGVyYXRvciB3aWtpbGluayBhbmQgcnVuICoqdXNlci1zY29wZSoqIGF1dGhvciBiYXRjaC1yZXBsYWNlICg1IG1pbikg4oCUIHN5c3RlbSBmaWxlcyByZXRhaW4gYFtb6rWs7JqU7ZWcXV1gCi0gWyBdIEZpbGwgaW4gYChZb3VyIE5hbWUpYCBwcm9maWxlIHNlY3Rpb24gaW4gQ01EUy5tZCAoNSBtaW4pCi0gWyBdIFBlcnNvbmFsaXplIEJSQUlOLm1kICg1IG1pbikKLSBbIF0gVHJ5IGAvc3RhdHVzYCBhbmQgYC9jb25uZWN0YCBvbmNlIGVhY2ggKDUgbWluKQotIFsgXSAoT3B0aW9uYWwpIFJ1biBnb2JpLW9uYm9hcmRpbmcgc2tpbGwgKDEwIG1pbikg4oCUIGZvciBHb2JpIFNwYWNlIHB1Ymxpc2gKCiMjIyBHdWlkZWQgcGF0aCAocmVjb21tZW5kZWQgZm9yIGNsYXNzIC8gY29ob3J0IHVzZSkKLSBbIF0gUmVhZCBDTURTLm1kIChza2ltKSBhbmQgSFEubWQgKDUgbWluKQotIFsgXSBPcGVuIHRoaXMgdmF1bHQgaW4gQ2xhdWRlIENvZGU6IGBjZCA8dmF1bHQ+ICYmIGNsYXVkZWAKLSBbIF0gU2F5ICoiY21kcyBvbmJvYXJkaW5nIiog4oCUIHJ1bnMgYDkwLiBTZXR0aW5ncy85MS4gU2tpbGxzL2NtZHMtb25ib2FyZGluZy9gICgxNSBtaW4gaW50ZXJ2aWV3KQogIC0gU3RlcHMgMcK3Mjogb3BlcmF0b3Igd2lraWxpbmsgKyBiYXRjaC1yZXBsYWNlIChhdXRvKQogIC0gU3RlcCAzOiBwZXJzb25hIGludGVydmlldyAoNeKAkzggbWluKQogIC0gU3RlcCA0OiBCUkFJTi5tZCBmaWxsZWQgZnJvbSBhbnN3ZXJzCiAgLSBTdGVwIDU6IDXigJMxMCBzdHViIG5vdGVzIGluIGAzMC4gUGVybWFuZW50IE5vdGVzL2AKICAtIFN0ZXAgNiAob3B0aW9uYWwpOiBDTURTLm1kIG9wZXJhdG9yIHByb2ZpbGUKLSBbIF0gVHJ5IGAvc3RhdHVzYCBhbmQgYC9jb25uZWN0YCBvbmNlIGVhY2ggKDUgbWluKQotIFsgXSAoT3B0aW9uYWwpIFJ1biBnb2JpLW9uYm9hcmRpbmcgc2tpbGwgKDEwIG1pbikg4oCUIGZvciBHb2JpIFNwYWNlIHB1Ymxpc2gKCkFmdGVyIGVpdGhlciBwYXRoLCB5b3UgaGF2ZSBhIHBlcnNvbmFsaXplZCB2YXVsdCByZWFkeSBmb3IgZGFpbHkgdXNlLiBXZWxjb21lIHRvIENNRFMuCgotLS0KCipUaGlzIHZhdWx0IHJlZGlzdHJpYnV0ZXMgdGhlIENNRFMgY29udmVudGlvbnMgb3JpZ2luYWxseSBhdXRob3JlZCBieSDqtazsmpTtlZwgKFlvaGFuIEtvbykuIENhbm9uaWNhbCByZWZlcmVuY2U6IFtzeXN0ZW0uY21kc3BhY2Uud29ya10oaHR0cHM6Ly9zeXN0ZW0uY21kc3BhY2Uud29yaykuIEdvYmkgaW50ZWdyYXRpb24gYWRhcHRlZCBmcm9tIFthaTRwa20tdmF1bHRdKGh0dHBzOi8vZ2l0aHViLmNvbS9qeWtpbS9haTRwa20tdmF1bHQpIGJ5IEppbiBLaW0uKgo=</script>
+
+
+<script type="module">
+(async function() {
+	// mermaid sources travel base64-encoded in data-mmd; render with the LATEST mermaid
+	if (document.getElementById('encrypted-data') && !window.__cmdsReady) {
+		await new Promise(function(r) { document.addEventListener('cmds-content-ready', r, { once: true }); });
+	}
+	var containers = Array.from(document.querySelectorAll('.mermaid-container[data-mmd]'));
+	if (!containers.length) return;
+	function decode(b64) {
+		var bin = atob(b64); var bytes = new Uint8Array(bin.length);
+		for (var i = 0; i < bin.length; i++) bytes[i] = bin.charCodeAt(i);
+		return new TextDecoder().decode(bytes);
+	}
+	var sources = containers.map(function(d) { return decode(d.getAttribute('data-mmd')); });
+	var mermaid;
+	try {
+		mermaid = (await import('https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs')).default;
+	} catch (e) {
+		containers.forEach(function(d, i) {
+			var pre = document.createElement('pre');
+			pre.textContent = sources[i];
+			d.replaceWith(pre);
+		});
+		return;
+	}
+	var seq = 0;
+	async function renderAll() {
+		var dark = document.documentElement.dataset.theme === 'dark';
+		mermaid.initialize({ startOnLoad: false, theme: dark ? 'dark' : 'neutral', securityLevel: 'strict' });
+		for (var i = 0; i < containers.length; i++) {
+			try {
+				var out = await mermaid.render('cmds-mmd-' + i + '-' + (seq++), sources[i]);
+				containers[i].innerHTML = out.svg;
+			} catch (e) {
+				var pre = document.createElement('pre');
+				pre.textContent = sources[i];
+				containers[i].innerHTML = '';
+				containers[i].appendChild(pre);
+			}
+		}
+	}
+	await renderAll();
+	new MutationObserver(function() { renderAll(); }).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+})();
+</script>
+
+
+<script>
+(function() {
+	var icon = document.getElementById('themeIcon');
+	var SUN = '<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>';
+	var MOON = '<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>';
+	function paint(theme) {
+		if (icon) icon.innerHTML = theme === 'dark' ? MOON : SUN;
+	}
+	var btn = document.getElementById('themeToggle');
+	if (btn) btn.addEventListener('click', function() {
+		var next = document.documentElement.dataset.theme === 'light' ? 'dark' : 'light';
+		document.documentElement.dataset.theme = next;
+		try { localStorage.setItem('cmds-theme', next); } catch(e) {}
+		paint(next);
+	});
+	paint(document.documentElement.dataset.theme || 'light');
+})();
+</script>
+
+<script>
+(function() {
+	var badge = document.getElementById('expiryBadge');
+	if (!badge) return;
+	var ts = Number(badge.getAttribute('data-expires'));
+	if (!ts) return;
+	var ko = badge.getAttribute('data-lang') === 'ko';
+	var text = document.getElementById('expiryText');
+	function render() {
+		var msLeft = ts - Date.now();
+		var d = new Date(ts);
+		var dateStr = d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0');
+		if (msLeft <= 0) {
+			text.textContent = ko ? '만료됨' : 'Expired';
+			badge.classList.add('b-expired');
+			// file-hosting backends (GitHub Pages, NAS…) have no server to
+			// 410 an expired share — hide the body here as a soft tombstone
+			var body = document.getElementById('note-content');
+			if (body && !body.dataset.tombstoned) {
+				body.dataset.tombstoned = '1';
+				body.innerHTML = '<p class="cmds-loading">' + (ko ? '이 공유는 만료되었습니다.' : 'This shared note has expired.') + '</p>';
+				var toc = document.getElementById('tocToggle'); if (toc) toc.hidden = true;
+				['mdCopy', 'mdDownload'].forEach(function(id) { var b = document.getElementById(id); if (b) b.hidden = true; });
+			}
+		} else {
+			// calendar-date diff, so "D-1" flips at midnight, not at share-time+24h
+			var now = new Date();
+			var days = Math.round(
+				(new Date(d.getFullYear(), d.getMonth(), d.getDate()).getTime() -
+				 new Date(now.getFullYear(), now.getMonth(), now.getDate()).getTime()) / 86400000
+			);
+			var count = days <= 0 ? (ko ? '오늘 만료' : 'expires today') : 'D-' + days;
+			text.textContent = (ko ? dateStr + ' 만료 · ' : 'Expires ' + dateStr + ' · ') + count;
+			if (days <= 3) badge.classList.add('b-soon');
+		}
+		badge.hidden = false;
+	}
+	render();
+	// keep honest across long-lived tabs (midnight rollover)
+	setInterval(render, 60 * 60 * 1000);
+})();
+</script>
+
+
+<script>
+(function() {
+	var PANELS = { toc: 'tocPanel', graph: 'graphPanel' };
+	var hasToc = false, hasGraph = false;
+
+	function docked() { return document.body.classList.contains('cmds-docked'); }
+
+	function setPanel(name, open) {
+		Object.keys(PANELS).forEach(function(k) {
+			var on = k === name ? open : false;
+			document.getElementById(PANELS[k]).classList.toggle('open', on);
+			document.getElementById(k + 'Toggle').classList.toggle('active', on);
+			try { localStorage.setItem('cmds-panel-' + k, on ? '1' : '0'); } catch(e) {}
+		});
+		if (name === 'graph' && open) requestAnimationFrame(function() { relayoutGraph(); });
+	}
+	function wireToggle(name) {
+		document.getElementById(name + 'Toggle').addEventListener('click', function() {
+			var isOpen = document.getElementById(PANELS[name]).classList.contains('open');
+			setPanel(name, !isOpen);
+		});
+	}
+
+	function setDock(on) {
+		if (on && window.innerWidth <= 1100) on = false;
+		var dock = document.getElementById('sideDock');
+		var toc = document.getElementById('tocPanel');
+		var graph = document.getElementById('graphPanel');
+		document.body.classList.toggle('cmds-docked', on);
+		if (on) {
+			Object.keys(PANELS).forEach(function(k) {
+				document.getElementById(PANELS[k]).classList.remove('open');
+				document.getElementById(k + 'Toggle').classList.remove('active');
+			});
+			if (hasToc) dock.appendChild(toc);
+			if (hasGraph) dock.appendChild(graph);
+			dock.hidden = false;
+		} else {
+			dock.hidden = true;
+			document.body.appendChild(toc);
+			document.body.appendChild(graph);
+		}
+		try { localStorage.setItem('cmds-dock', on ? '1' : '0'); } catch(e) {}
+		if (hasGraph) requestAnimationFrame(function() { relayoutGraph(); });
+	}
+
+	function headings() {
+		return document.querySelectorAll('#note-content h1, #note-content h2, #note-content h3, #note-content h4');
+	}
+
+	function assignHeadingIds() {
+		var used = {};
+		headings().forEach(function(h) {
+			var text = (h.textContent || '').trim();
+			if (!text || h.id) return;
+			var slug = text.toLowerCase().replace(/[^0-9a-z\uAC00-\uD7A3\u3131-\u318E\s-]/g, '').replace(/\s+/g, '-') || 'section';
+			if (used[slug] != null) { used[slug]++; slug = slug + '-' + used[slug]; } else { used[slug] = 0; }
+			h.id = slug;
+		});
+	}
+
+	function buildToc() {
+		var list = document.getElementById('tocList');
+		list.innerHTML = '';
+		headings().forEach(function(h) {
+			var text = (h.textContent || '').trim();
+			if (!text || !h.id) return;
+			var a = document.createElement('a');
+			a.href = '#' + h.id;
+			a.textContent = text;
+			a.className = 'toc-' + h.tagName.toLowerCase();
+			a.title = text;
+			list.appendChild(a);
+		});
+		return list.children.length >= 2;
+	}
+
+	// highlight the section currently in view (and keep it visible in a scrolling TOC)
+	function scrollSpy() {
+		var links = document.querySelectorAll('#tocList a');
+		if (!links.length) return;
+		var map = {};
+		links.forEach(function(a) { map[decodeURIComponent(a.hash.slice(1))] = a; });
+		var obs = new IntersectionObserver(function(entries) {
+			entries.forEach(function(en) {
+				if (!en.isIntersecting) return;
+				links.forEach(function(a) { a.classList.remove('active'); });
+				var a = map[en.target.id];
+				if (a) {
+					a.classList.add('active');
+					if (a.scrollIntoView) a.scrollIntoView({ block: 'nearest' });
+				}
+			});
+		}, { rootMargin: '0px 0px -75% 0px' });
+		headings().forEach(function(h) { if (h.id) obs.observe(h); });
+	}
+
+	var ICON_COPY = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2.5"/><path d="M5 15H4.5A2.5 2.5 0 0 1 2 12.5v-8A2.5 2.5 0 0 1 4.5 2h8A2.5 2.5 0 0 1 15 4.5V5"/></svg>';
+	var ICON_CHECK = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>';
+	var ICON_LINK = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>';
+
+	function enhanceCodeBlocks() {
+		document.querySelectorAll('#note-content pre').forEach(function(pre) {
+			if (pre.querySelector('.code-copy')) return;
+			var code = pre.querySelector('code');
+			var langMatch = ((code ? code.className : '') + ' ' + pre.className).match(/language-([a-z0-9+#-]+)/i);
+			if (langMatch && langMatch[1] !== 'undefined') pre.setAttribute('data-lang', langMatch[1]);
+			var btn = document.createElement('button');
+			btn.className = 'code-copy';
+			btn.setAttribute('aria-label', 'Copy code');
+			btn.innerHTML = ICON_COPY;
+			btn.addEventListener('click', function() {
+				var code = pre.querySelector('code');
+				var textToCopy = (code || pre).innerText.replace(/\n$/, '');
+				navigator.clipboard.writeText(textToCopy).then(function() {
+					btn.innerHTML = ICON_CHECK;
+					btn.classList.add('copied');
+					setTimeout(function() { btn.innerHTML = ICON_COPY; btn.classList.remove('copied'); }, 1500);
+				});
+			});
+			pre.appendChild(btn);
+		});
+	}
+
+	// hover link icon on headings — click copies the deep link
+	function headingAnchors() {
+		headings().forEach(function(h) {
+			if (!h.id || h.querySelector('.h-anchor')) return;
+			var a = document.createElement('a');
+			a.className = 'h-anchor';
+			a.href = '#' + h.id;
+			a.setAttribute('aria-label', 'Copy link to section');
+			a.innerHTML = ICON_LINK;
+			a.addEventListener('click', function(e) {
+				e.preventDefault();
+				history.replaceState(null, '', '#' + h.id);
+				try { navigator.clipboard.writeText(location.href.split('#')[0] + '#' + h.id); } catch(err) {}
+				h.scrollIntoView({ behavior: 'smooth' });
+			});
+			h.appendChild(a);
+		});
+	}
+
+	// ══════════ markdown source tools (copy / download) ══════════
+	function mdSource() {
+		if (window.__cmdsMd != null) return window.__cmdsMd; // decrypted payload
+		var el = document.getElementById('md-source');
+		if (!el) return null;
+		try {
+			var bin = atob(el.textContent.trim());
+			var bytes = new Uint8Array(bin.length);
+			for (var i = 0; i < bin.length; i++) bytes[i] = bin.charCodeAt(i);
+			return new TextDecoder().decode(bytes);
+		} catch(e) { return null; }
+	}
+
+	function wireMdTools() {
+		var md = mdSource();
+		if (md == null) return;
+		var copyBtn = document.getElementById('mdCopy');
+		var dlBtn = document.getElementById('mdDownload');
+		if (copyBtn) {
+			copyBtn.hidden = false;
+			var idle = copyBtn.innerHTML;
+			copyBtn.addEventListener('click', function() {
+				navigator.clipboard.writeText(md).then(function() {
+					copyBtn.innerHTML = ICON_CHECK;
+					copyBtn.classList.add('active');
+					setTimeout(function() { copyBtn.innerHTML = idle; copyBtn.classList.remove('active'); }, 1500);
+				});
+			});
+		}
+		if (dlBtn) {
+			dlBtn.hidden = false;
+			dlBtn.addEventListener('click', function() {
+				var name = (document.title || 'note').replace(/[\\/:*?"<>|]/g, '-').trim() || 'note';
+				var blob = new Blob([md], { type: 'text/markdown;charset=utf-8' });
+				var url = URL.createObjectURL(blob);
+				var a = document.createElement('a');
+				a.href = url;
+				a.download = name + '.md';
+				document.body.appendChild(a);
+				a.click();
+				a.remove();
+				setTimeout(function() { URL.revokeObjectURL(url); }, 1000);
+			});
+		}
+	}
+
+	// ══════════ interactive force-directed local graph ══════════
+	var G = null; // { data, pts, adj, deg, W, H, k, tx, ty, hover }
+
+	function readGraphData() {
+		var dataEl = document.getElementById('graph-data');
+		if (!dataEl) return null;
+		var g;
+		try { g = JSON.parse(dataEl.textContent); } catch(e) { return null; }
+		if (!g.nodes || g.nodes.length < 2) return null;
+		return g;
+	}
+
+	function runLayout(g, W, H) {
+		var N = g.nodes.length;
+		var pts = g.nodes.map(function(n, i) {
+			var a = i * 2.399963;
+			var r = n.level === 0 ? 0 : (n.level === 1 ? 0.35 : 0.7) * Math.min(W, H) / 2;
+			return { x: W / 2 + r * Math.cos(a), y: H / 2 + r * Math.sin(a), vx: 0, vy: 0 };
+		});
+		var SPRING = 0.03, REST = Math.min(W, H) / 3.2, REPEL = Math.min(W, H) * 55, GRAV = 0.008;
+		for (var it = 0; it < 300; it++) {
+			var damp = 0.85 * (1 - it / 340);
+			for (var i = 0; i < N; i++) {
+				for (var j = i + 1; j < N; j++) {
+					var dx = pts[j].x - pts[i].x, dy = pts[j].y - pts[i].y;
+					var d2 = dx * dx + dy * dy + 0.01, d = Math.sqrt(d2);
+					var f = Math.min(REPEL / d2, 8);
+					var fx = (dx / d) * f, fy = (dy / d) * f;
+					pts[i].vx -= fx; pts[i].vy -= fy;
+					pts[j].vx += fx; pts[j].vy += fy;
+				}
+			}
+			g.edges.forEach(function(e) {
+				var a = pts[e[0]], b = pts[e[1]];
+				var dx = b.x - a.x, dy = b.y - a.y;
+				var d = Math.sqrt(dx * dx + dy * dy) + 0.01;
+				var f = SPRING * (d - REST);
+				var fx = (dx / d) * f, fy = (dy / d) * f;
+				a.vx += fx; a.vy += fy;
+				b.vx -= fx; b.vy -= fy;
+			});
+			for (var k2 = 0; k2 < N; k2++) {
+				pts[k2].vx += (W / 2 - pts[k2].x) * GRAV;
+				pts[k2].vy += (H / 2 - pts[k2].y) * GRAV;
+				pts[k2].x += pts[k2].vx * damp;
+				pts[k2].y += pts[k2].vy * damp;
+				pts[k2].vx *= 0.6; pts[k2].vy *= 0.6;
+			}
+			pts[0].x = W / 2; pts[0].y = H / 2; pts[0].vx = 0; pts[0].vy = 0;
+		}
+		var minX = 1e9, maxX = -1e9, minY = 1e9, maxY = -1e9;
+		pts.forEach(function(pt) {
+			minX = Math.min(minX, pt.x); maxX = Math.max(maxX, pt.x);
+			minY = Math.min(minY, pt.y); maxY = Math.max(maxY, pt.y);
+		});
+		var M = 30;
+		var sx = (W - M * 2) / Math.max(maxX - minX, 1), sy = (H - M * 2) / Math.max(maxY - minY, 1);
+		var sc = Math.min(sx, sy, 1.5);
+		pts.forEach(function(pt) {
+			pt.x = M + (pt.x - minX) * sc + (W - M * 2 - (maxX - minX) * sc) / 2;
+			pt.y = M + (pt.y - minY) * sc + (H - M * 2 - (maxY - minY) * sc) / 2;
+		});
+		return pts;
+	}
+
+	function canvasSize() {
+		var canvas = document.getElementById('graphCanvas');
+		var panel = document.getElementById('graphPanel');
+		var wasHidden = !panel.classList.contains('open') && !docked();
+		if (wasHidden) { panel.style.visibility = 'hidden'; panel.classList.add('open'); }
+		var W = Math.max(canvas.clientWidth || panel.clientWidth - 36, 200);
+		var H = docked() ? Math.max(canvas.clientHeight, 200) : 280;
+		if (wasHidden) { panel.classList.remove('open'); panel.style.visibility = ''; }
+		return { W: W, H: H };
+	}
+
+	function relayoutGraph() {
+		var data = G ? G.data : readGraphData();
+		if (!data) return;
+		var sz = canvasSize();
+		var adj = data.nodes.map(function() { return {}; });
+		var deg = data.nodes.map(function() { return 0; });
+		data.edges.forEach(function(e) {
+			adj[e[0]][e[1]] = true; adj[e[1]][e[0]] = true;
+			deg[e[0]]++; deg[e[1]]++;
+		});
+		G = {
+			data: data, adj: adj, deg: deg,
+			pts: runLayout(data, sz.W, sz.H),
+			W: sz.W, H: sz.H, k: 1, tx: 0, ty: 0, hover: -1,
+		};
+		renderGraph();
+	}
+
+	function renderGraph() {
+		if (!G) return;
+		var canvas = document.getElementById('graphCanvas');
+		var dpr = window.devicePixelRatio || 1;
+		canvas.width = G.W * dpr; canvas.height = G.H * dpr;
+		if (!docked()) canvas.style.height = G.H + 'px';
+		var ctx = canvas.getContext('2d');
+		ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+		ctx.clearRect(0, 0, G.W, G.H);
+
+		var css = getComputedStyle(document.documentElement);
+		var noteColor = css.getPropertyValue('--graph-note').trim() || css.getPropertyValue('--accent').trim();
+		var muted = css.getPropertyValue('--muted').trim();
+		var text = css.getPropertyValue('--text').trim();
+		var border = css.getPropertyValue('--border').trim();
+		var cardBg = css.getPropertyValue('--card-bg').trim();
+
+		var g = G.data, pts = G.pts, k = G.k, hover = G.hover;
+		var sx = function(pt) { return pt.x * k + G.tx; };
+		var sy = function(pt) { return pt.y * k + G.ty; };
+		var inHood = function(i) { return hover < 0 || i === hover || G.adj[hover][i]; };
+
+		g.edges.forEach(function(e) {
+			var touches = hover >= 0 && (e[0] === hover || e[1] === hover);
+			if (hover >= 0) {
+				ctx.globalAlpha = touches ? 0.95 : 0.08;
+				ctx.strokeStyle = touches ? muted : border;
+				ctx.lineWidth = touches ? 1.5 : 1;
+			} else {
+				ctx.globalAlpha = (g.nodes[e[0]].level === 2 || g.nodes[e[1]].level === 2) ? 0.45 : 0.8;
+				ctx.strokeStyle = border;
+				ctx.lineWidth = 1;
+			}
+			ctx.beginPath();
+			ctx.moveTo(sx(pts[e[0]]), sy(pts[e[0]]));
+			ctx.lineTo(sx(pts[e[1]]), sy(pts[e[1]]));
+			ctx.stroke();
+		});
+
+		var rOf = function(i) {
+			var base = i === 0 ? 7 : Math.min(3.2 + G.deg[i] * 0.6, 6.5);
+			return base * Math.pow(k, 0.75);
+		};
+		g.nodes.forEach(function(n, i) {
+			var dim = hover >= 0 ? (inHood(i) ? 1 : 0.14) : (n.level === 2 ? 0.65 : 1);
+			ctx.globalAlpha = dim;
+			ctx.fillStyle = n.type === 'tag' ? '#E985A2' : noteColor;
+			ctx.beginPath(); ctx.arc(sx(pts[i]), sy(pts[i]), rOf(i), 0, Math.PI * 2); ctx.fill();
+			if (i === hover) {
+				ctx.strokeStyle = text; ctx.lineWidth = 1.5;
+				ctx.beginPath(); ctx.arc(sx(pts[i]), sy(pts[i]), rOf(i) + 2.5, 0, Math.PI * 2); ctx.stroke();
+			}
+		});
+
+		// labels: center always; L1 at normal zoom; everything once zoomed in;
+		// hovering shows the whole neighborhood regardless of zoom
+		g.nodes.forEach(function(n, i) {
+			var show;
+			if (hover >= 0) show = inHood(i);
+			else show = i === 0 || (n.level === 1 && (k >= 1.05 || g.nodes.length <= 20)) || k >= 1.9 || g.nodes.length <= 12;
+			if (!show) return;
+			var fs = i === 0 || i === hover ? 11.5 : 10.5;
+			ctx.font = (i === 0 || i === hover ? 'bold ' : '') + fs + 'px -apple-system, sans-serif';
+			var label = n.label.length > 22 ? n.label.slice(0, 21) + '…' : n.label;
+			var tw = ctx.measureText(label).width;
+			var lx = Math.max(2, Math.min(G.W - tw - 2, sx(pts[i]) - tw / 2));
+			var ly = sy(pts[i]) + rOf(i) + fs + 2;
+			var alpha = hover >= 0 ? (inHood(i) ? 1 : 0) : (n.level === 2 && k < 2 ? 0.7 : 0.95);
+			ctx.globalAlpha = alpha * 0.8;
+			ctx.fillStyle = cardBg;
+			ctx.fillRect(lx - 3, ly - fs + 1, tw + 6, fs + 3);
+			ctx.globalAlpha = alpha;
+			ctx.fillStyle = i === 0 || i === hover ? text : muted;
+			ctx.fillText(label, lx, ly);
+		});
+		ctx.globalAlpha = 1;
+	}
+
+	function zoomBy(factor) {
+		if (!G) return;
+		var mx = G.W / 2, my = G.H / 2;
+		var nk = Math.max(0.35, Math.min(4.5, G.k * factor));
+		factor = nk / G.k;
+		G.tx = mx - (mx - G.tx) * factor;
+		G.ty = my - (my - G.ty) * factor;
+		G.k = nk;
+		renderGraph();
+	}
+
+	function wireGraphInteraction() {
+		var canvas = document.getElementById('graphCanvas');
+		var dragging = false, moved = false, lastX = 0, lastY = 0;
+
+		document.getElementById('gZoomIn').addEventListener('click', function() { zoomBy(1.35); });
+		document.getElementById('gZoomOut').addEventListener('click', function() { zoomBy(1 / 1.35); });
+		document.getElementById('gReset').addEventListener('click', function() {
+			if (G) { G.k = 1; G.tx = 0; G.ty = 0; renderGraph(); }
+		});
+
+		function pick(mx, my) {
+			if (!G) return -1;
+			var best = -1, bestD = 12 * 12;
+			G.pts.forEach(function(pt, i) {
+				var dx = pt.x * G.k + G.tx - mx, dy = pt.y * G.k + G.ty - my;
+				var d = dx * dx + dy * dy;
+				if (d < bestD) { bestD = d; best = i; }
+			});
+			return best;
+		}
+		function pos(e) {
+			var r = canvas.getBoundingClientRect();
+			return { x: e.clientX - r.left, y: e.clientY - r.top };
+		}
+
+		canvas.addEventListener('wheel', function(e) {
+			if (!G) return;
+			e.preventDefault();
+			var m = pos(e);
+			var factor = Math.exp(-e.deltaY * (e.ctrlKey ? 0.01 : 0.002));
+			var nk = Math.max(0.35, Math.min(4.5, G.k * factor));
+			factor = nk / G.k;
+			G.tx = m.x - (m.x - G.tx) * factor;
+			G.ty = m.y - (m.y - G.ty) * factor;
+			G.k = nk;
+			renderGraph();
+		}, { passive: false });
+
+		canvas.addEventListener('pointerdown', function(e) {
+			if (!G) return;
+			dragging = true; moved = false;
+			lastX = e.clientX; lastY = e.clientY;
+			canvas.classList.add('dragging');
+			canvas.setPointerCapture(e.pointerId);
+		});
+		canvas.addEventListener('pointermove', function(e) {
+			if (!G) return;
+			if (dragging) {
+				var dx = e.clientX - lastX, dy = e.clientY - lastY;
+				if (Math.abs(dx) + Math.abs(dy) > 2) moved = true;
+				G.tx += dx; G.ty += dy;
+				lastX = e.clientX; lastY = e.clientY;
+				renderGraph();
+			} else {
+				var m = pos(e);
+				var h = pick(m.x, m.y);
+				canvas.classList.toggle('on-node', h >= 0);
+				if (h !== G.hover) { G.hover = h; renderGraph(); }
+			}
+		});
+		canvas.addEventListener('pointerup', function(e) {
+			dragging = false;
+			canvas.classList.remove('dragging');
+			// double-click-ish: a clean click on empty space resets the view
+			if (!moved) {
+				var m = pos(e);
+				if (pick(m.x, m.y) < 0 && G.k !== 1) { G.k = 1; G.tx = 0; G.ty = 0; renderGraph(); }
+			}
+		});
+		canvas.addEventListener('pointerleave', function() {
+			if (G && G.hover !== -1) { G.hover = -1; renderGraph(); }
+			canvas.classList.remove('on-node');
+		});
+	}
+
+	function init() {
+		// start from a known-clean panel state before restoring preferences
+		document.body.classList.remove('cmds-docked');
+		document.getElementById('sideDock').hidden = true;
+		assignHeadingIds();
+		enhanceCodeBlocks();
+		headingAnchors();
+		wireMdTools();
+		hasToc = buildToc();
+		if (hasToc) {
+			document.getElementById('tocToggle').hidden = false;
+			wireToggle('toc');
+			scrollSpy();
+		}
+		hasGraph = !!readGraphData();
+		if (hasGraph) {
+			document.getElementById('graphToggle').hidden = false;
+			wireToggle('graph');
+			wireGraphInteraction();
+			new MutationObserver(function() { renderGraph(); }).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+			window.addEventListener('resize', function() {
+				if (docked() && window.innerWidth <= 1100) { setDock(false); return; }
+				if (docked()) requestAnimationFrame(function() { relayoutGraph(); });
+			});
+		}
+		if (hasToc || hasGraph) {
+			document.querySelectorAll('[data-pin]').forEach(function(btn) {
+				btn.addEventListener('click', function() { setDock(!docked()); });
+			});
+			// floating popups close on any click outside the card (docked stays put)
+			document.addEventListener('pointerdown', function(e) {
+				if (docked()) return;
+				if (e.target.closest('.side-panel, .side-tools')) return;
+				Object.keys(PANELS).forEach(function(k) {
+					if (document.getElementById(PANELS[k]).classList.contains('open')) setPanel(k, false);
+				});
+			});
+		}
+		try {
+			if (localStorage.getItem('cmds-dock') === '1' && (hasToc || hasGraph)) {
+				setDock(true);
+			} else if (localStorage.getItem('cmds-panel-toc') === '1' && hasToc) setPanel('toc', true);
+			else if (localStorage.getItem('cmds-panel-graph') === '1' && hasGraph) setPanel('graph', true);
+		} catch(e) {}
+	}
+
+	if (document.getElementById('encrypted-data') && !window.__cmdsReady) {
+		document.addEventListener('cmds-content-ready', init, { once: true });
+	} else {
+		init();
+	}
+})();
+</script>
+
+</body>
+</html>
